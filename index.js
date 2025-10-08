@@ -44,18 +44,18 @@
 
 // ----------------------------------------------
 
-// 3.
+// 3. count the number of digits in a number
 
-function display(num) {
-  let sum = 0;
+// function countDigits(num){
+// num=Math.abs(num)
+//     let count=0
 
-  while (num > 0) {
-    sum += num % 10;
+//     do{
+// count++
+// num=Math.floor(num/10)
+//     }while(num>5)
+// return count
+// }
 
-    num = Math.floor(num / 10);
-  }
-
-  return sum;
-}
-
-console.log(display(673));
+// console.log(countDigits(-78093));
+// console.log(countDigits(278749093));
