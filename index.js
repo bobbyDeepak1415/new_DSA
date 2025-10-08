@@ -64,26 +64,53 @@
 
 // 4.palindrome
 
+// function display(num){
 
-function display(num){
+//     let localNum=num
+//     let reverseNum=0
 
-    let localNum=num
-    let reverseNum=0
+//     while(localNum>0){
 
-    while(localNum>0){
+//         const lastDigit=localNum%10
 
-        const lastDigit=localNum%10
+//          reverseNum=reverseNum*10+lastDigit
 
-         reverseNum=reverseNum*10+lastDigit
+//         localNum=Math.floor(localNum/10)
 
-        localNum=Math.floor(localNum/10)
+//     }
 
-    }
+// return num===reverseNum
+
+// }
+
+// console.log(display(3443))
+
+// --------------------------------------------------------------------
+
+// 5.fibonacci
+
+// 0,1,1,2,3,5,8
+
+// f5=5
+// f6=8
+// f4=3
+
+// function display(n) {
+//   if (n < 2) return 1;
+//   let current = 1,
+//     prev = 0,
+//     next;
+
+//   for (let i = 2; i <= n; i++) {
+//     next = current + prev;
+//     prev = current;
+//     current = next;
+//   }
+
+//   return next;
+// }
+
+// console.log(display(6));
 
 
-return num===reverseNum
-
-}
-
-console.log(display(3443))
-
+// -------------------------------------------------------------------------
