@@ -64,18 +64,26 @@
 
 // 4.palindrome
 
-function display(num) {
-  let localNum = num;
-  let reverseNum = 0;
 
-  while (localNum > 0) {
-    const lastDigit = localNum % 10;
+function display(num){
 
-    reverseNum = reverseNum * 10 + lastDigit;
-    localNum = Math.floor(localNum / 10)
-  }
+    let localNum=num
+    let reverseNum=0
 
-  return num === reverseNum;
+    while(localNum>0){
+
+        const lastDigit=localNum%10
+
+         reverseNum=reverseNum*10+lastDigit
+
+        localNum=Math.floor(localNum/10)
+
+    }
+
+
+return num===reverseNum
+
 }
 
-console.log(display(343));
+console.log(display(3443))
+
