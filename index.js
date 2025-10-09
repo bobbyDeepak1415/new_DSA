@@ -96,25 +96,45 @@
 // f4=3
 
 
-function display(num){
+// function display(num){
 
-    if(num<2) return 1
+//     if(num<2) return 1
 
-    let prev=0
-    let current=1
+//     let prev=0
+//     let current=1
 
-    let next
+//     let next
 
-    for(let i=2;i<=num;i++){
-        next=current+prev 
-        prev=current 
-        current=next 
-    }
+//     for(let i=2;i<=num;i++){
+//         next=current+prev 
+//         prev=current 
+//         current=next 
+//     }
 
-return next
-}
+// return next
+// }
 
-console.log(display(4))
+// console.log(display(4))
 
 
 // -------------------------------------------------------------------------
+
+
+// 6.  find missing number
+
+var nums=[0,1,3]
+
+function display(nums){
+
+    let sum=0
+
+    for(let i=0;i<nums.length;i++){
+        sum+=nums[i]
+    }
+
+    return (nums.length*(nums.length+1))/2-sum
+
+
+}
+
+console.log(display(nums))
