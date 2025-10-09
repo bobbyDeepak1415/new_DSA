@@ -142,18 +142,19 @@
 
 // 7.
 
-let a = 9;
-let b = 4;
+p = 0;
+for (let i = 0; p <= n; i++) {
+  p = p + i;
+}
 
-console.log("a:",a);
-console.log("b:",b);
+// i=0 p=0 > p=0+0
 
-let temp;
+// i=1 p=0(<=10) p=1 
 
-temp=a
-a=b
-b=temp
+// i=2 p=1(<=10) p=3
 
-console.log("a:",a);
-console.log("b:",b);
+//i=3 p=3(<=10) p=6
 
+// i=4 p=6(<=10) p=10
+
+// // i=5 p=10(<=10) p=15 stops
