@@ -119,23 +119,25 @@
 
 // 6.  find missing number
 
-var nums = [0, 1, 2, 3, 5];
+// var nums = [0, 1, 2, 3, 5];
 
-function display(nums) {
-  // let sum=0
+// function display(nums) {
+//   // let sum=0
 
-  // for(let i=0;i<nums.length;i++){
-  //     sum+=nums[i]
-  // }
+//   // for(let i=0;i<nums.length;i++){
+//   //     sum+=nums[i]
+//   // }
 
-  // return (nums.length*(nums.length+1))/2-sum
+//   // return (nums.length*(nums.length+1))/2-sum
 
-  return (
-    (nums.length * (nums.length + 1)) / 2 -
-    nums.reduce((acc, curr) => acc + curr)
-  );
-}
+//   return (
+//     (nums.length * (nums.length + 1)) / 2 -
+//     nums.reduce((acc, curr) => acc + curr)
+//   );
+// }
 
-console.log(display(nums));
+// console.log(display(nums));
 
 // --------------------------------------------------------------
+
+// 7.
