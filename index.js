@@ -95,22 +95,26 @@
 // f6=8
 // f4=3
 
-// function display(n) {
-//   if (n < 2) return 1;
-//   let current = 1,
-//     prev = 0,
-//     next;
 
-//   for (let i = 2; i <= n; i++) {
-//     next = current + prev;
-//     prev = current;
-//     current = next;
-//   }
+function display(num){
 
-//   return next;
-// }
+    if(num<2) return 1
 
-// console.log(display(6));
+    let prev=0
+    let current=1
+
+    let next
+
+    for(let i=2;i<=num;i++){
+        next=current+prev 
+        prev=current 
+        current=next 
+    }
+
+return next
+}
+
+console.log(display(4))
 
 
 // -------------------------------------------------------------------------
