@@ -122,7 +122,7 @@
 
 // 6.  find missing number
 
-var nums=[0,1,3]
+var nums=[0,1,2,3,5]
 
 function display(nums){
 
@@ -132,9 +132,12 @@ function display(nums){
         sum+=nums[i]
     }
 
+   
     return (nums.length*(nums.length+1))/2-sum
 
 
 }
 
 console.log(display(nums))
+
+// --------------------------------------------------------------
