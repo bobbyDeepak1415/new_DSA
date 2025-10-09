@@ -145,6 +145,15 @@
 let a = 9;
 let b = 4;
 
-console.log(a, b);
+console.log("a:",a);
+console.log("b:",b);
 
 let temp;
+
+temp=a
+a=b
+b=temp
+
+console.log("a:",a);
+console.log("b:",b);
+
