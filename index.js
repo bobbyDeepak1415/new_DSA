@@ -140,18 +140,18 @@
 
 // --------------------------------------------------------------
 
-// 7. time complexity
+// 7. time complexity?
 
-function display(n){
+function display(num){
 
   let sum=0
   
-  while(n>0){
+  while(num>0){
     sum+=num%10
     num=Math.floor(num/10)
     
   }
-  
+  return sum
 }
 
-console.log(display())
+console.log(display(45792))
