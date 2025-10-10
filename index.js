@@ -143,6 +143,15 @@
 // 7.
 
 p=0
-for( i=i;i<navigator;i++){
+n=10
+for( i=1;i<n;i=i*2){
   p++
 }
+
+// i=1 >> p=1 
+// i=1*2 power1 >> p=2 
+// i=1*2 power2 >> p=3 
+// i=1*2 power3 >> p=4
+
+// n=2 power k
+// k=log2n
