@@ -140,34 +140,18 @@
 
 // --------------------------------------------------------------
 
-// 7.
+// 7. time complexity
 
-p=0
-for( i=1;i<n;i=i*2){
-  p++
+function display(n){
+
+  let sum=0
+  
+  while(n>0){
+    sum+=num%10
+    num=Math.floor(num/10)
+    
+  }
+  
 }
 
-for (j = 1; j < p; j = j * 2) {
-  // stmnt
-}
-
-
-// i=1 >> p=1 
-// i=1*2 power1 >> p=2 
-// i=1*2 power2 >> p=3 
-// i=1*2 power3 >> p=4
-
-// i=n=2 power k
-// k=log2n
-
-
-for(j=1;j<p;j=j*2){
-  // stmnt
-}
-
-// j=1 >>  
-// j=1*2 power1 >> p=2 
-// j=1*2 power2 >> p=3 
-
-
-// p=
+console.log(display())
