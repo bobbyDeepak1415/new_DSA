@@ -177,7 +177,7 @@
 
 // }
 
-// console.log(display(arr1,4)); 
+// console.log(display(arr1,4));
 
 // const result1=arr1.indexOf(87)
 
@@ -207,47 +207,5 @@
 // console.log(subArr)
 // console.log(arr1)
 
-
-
-const arr1 = [2, 4, 5, 6,39 ,[45,89]];
-
-const person={
-  name:"Bobby",
-  status:"employed",
-  
-  active:true,
-  age:28,
-  adress:{
-    city:"Ongole",
-    state:"AP"
-  }
-}
-
-const newPerson={...person}
-
-
-
-newPerson.name="Deepak"
-newPerson.adress.city="Bangalore"
-
-
-// console.log(newPerson)
-// console.log(person)
-
-const arr2 = [45,46,47];
-
-const str="Bob"
-// const str2=."by"
-let str3=str.concat("by")
-
-// const newArr=[...arr1]
-const newArr=arr1.concat(arr2)
-
-
-// newArr[5].splice(0,1)
-// newArr.splice(0,3)
-// console.log(newArr)
-// console.log(arr1)
-console.log(str3)
 
 
