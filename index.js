@@ -161,6 +161,7 @@
 
 
 const arr1=[2,4,87,862,2,5,39,2,6]
-console.log(arr1.find(num=>num.includes("62")))
 
+arr1.pop()
 
+console.log(arr1)
