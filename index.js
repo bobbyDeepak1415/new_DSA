@@ -160,8 +160,15 @@
 // -----------------------------------------------------------------
 
 
-const arr1=[2,4,87,862,2,5,39,2,64]
 
-arr1.pop()
-// const result=arr1[arr1.length-1]
-console.log(arr1)
+
+
+
+// for(let i=0;i<arr1.length;i++){
+  //   console.log(arr1[i])
+  // }
+  
+  const arr1=[2,4,87,862,2,5,39,2,64]
+arr1.forEach((x,i)=>{
+ console.log(x)
+})
