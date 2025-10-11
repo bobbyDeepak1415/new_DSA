@@ -233,15 +233,29 @@
     
     // -----------------------------------------------------------------------------------
     
-    // 4.how to sort an array
+    // 4.how to sort an array(time cmplxty of sort() is nlogn)
     
     
     // const arr1 = ["oranges","zebra","apple","cats",];
     // const result=arr1.sort((a,b)=>a.localeCompare(b))
     
-    const arr1 = [2, 4, 5, 6, 87, 162, 2, 5, -39];
+    // const arr1 = [2, 4, 5, 6, 87, 162, 2, 5, -39];
+    
+    // // const result=arr1.sort((a,b)=>a-b)
+    // // console.log(result)
+    
+    // console.log(arr1.sort())
+    
+    
+    
+    
+    // ---------------------------------------------------------------------
+    // 5.how to reverse an array
+    
+    
+    // const arr1 = [2, 4, 5, 6, 87, 162, 5, -39];
 
-    // const result=arr1.sort((a,b)=>a-b)
-    // console.log(result)
+    // console.log(arr1.reverse())
 
-    console.log(arr1.sort())
+
+    
