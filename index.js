@@ -185,9 +185,20 @@
       
       // -----------------------------------------------------------------------
       
-      // 2.delete from an array
+      // 2.delete,add and update from an array
+      // shift,splice
       
-      const arr1 = [2, 4, 87, 862, 2, 5, 39, 2, 64];
-
+      const arr1 = [2, 4,5,6, 87, 862, 2, 5, 39, 2, 64];
       
+      // arr1.unshift(98,36,7653)
+      
+      console.log(arr1)
 
+      // arr1.splice(1,0,44,55,66)
+      
+      // arr1.splice(1,3,44,55,66)
+      
+      
+      
+      
+      console.log(arr1)
