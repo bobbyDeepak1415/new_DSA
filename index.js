@@ -159,16 +159,23 @@
 
 // -----------------------------------------------------------------
 
+// question:check if an elemnent exists in an array
 
+const arr1 = [2, 4, 87, 862, 2, 5, 39, 2, 64];
+const display = (arr, target) => {
+  for (let i of arr) {
+    if (i === target) {
+      return true;
+    } 
+    return false
+  }
+};
 
-
-
+console.log(display(arr1,87));
 
 // for(let i=0;i<arr1.length;i++){
-  //   console.log(arr1[i])
-  // }
-  
-  const arr1=[2,4,87,862,2,5,39,2,64]
-arr1.forEach((x,i)=>{
- console.log(x)
-})
+//   console.log(arr1[i])
+// }
+
+//  const result=arr1.includes(614)
+//  console.log(result)
