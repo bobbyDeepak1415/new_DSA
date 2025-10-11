@@ -177,7 +177,7 @@
 
 // }
 
-// console.log(display(arr1,4));
+// console.log(display(arr1,4)); 
 
 // const result1=arr1.indexOf(87)
 
@@ -189,7 +189,7 @@
 // shift,splice
 // *splice can add delete and update elements in or from an array
 
-const arr1 = [2, 4, 5, 6, 87, 862, 2, 5, 39, 2, 64];
+// const arr1 = [2, 4, 5, 6, 87, 862, 2, 5, 39, {name:"Bobby",city:"ongloe"},[45,89]];
 
 // arr1.unshift(98,36,7653)
 
@@ -203,6 +203,37 @@ const arr1 = [2, 4, 5, 6, 87, 862, 2, 5, 39, 2, 64];
 
 // slice vs splice
 
-const subArr=arr1.slice(1,5)
-console.log(subArr)
-console.log(arr1)
+// const subArr=arr1.slice(1,5)
+// console.log(subArr)
+// console.log(arr1)
+
+
+
+
+const person={
+  name:"Bobby",
+  status:"employed",
+  
+  active:true,
+  age:28,
+  adress:{
+    city:"Ongole",
+    state:"AP"
+  }
+}
+
+const newPerson={...person}
+const newPerson1=Object.assign({},person)
+
+
+
+newPerson.name="Deepak"
+newPerson.adress.city="Bangalore"
+
+newPerson1.adress.state="karnataka"
+
+console.log(newPerson)
+console.log(person)
+
+const arr1 = [2, 4, 5, 6,39 ,[45,89]];
+
