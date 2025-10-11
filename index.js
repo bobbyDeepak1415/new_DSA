@@ -159,17 +159,15 @@
 
 // -----------------------------------------------------------------
 
-// question:check if an elemnent exists in an array
+// JAVSCRIPT
+
+//1.check if an elemnent exists in an array
 
 const arr1 = [2, 4, 87, 862, 2, 5, 39, 2, 64];
-const display = (arr, target) => {
-  for (let i=0;i<arr.length;i++) {
-    if (arr[i] === target) {
-      return i
-    } 
-  }
-  return false
-};
+
+const display=()=>{
+  
+}
 
 console.log(display(arr1,8628));
 
@@ -177,5 +175,5 @@ console.log(display(arr1,8628));
 //   console.log(arr1[i])
 // }
 
-//  const result=arr1.includes(614)
-//  console.log(result)
+ const result=arr1.indexOf(87)
+ console.log(result)
