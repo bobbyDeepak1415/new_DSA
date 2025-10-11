@@ -223,17 +223,24 @@ const person={
 }
 
 const newPerson={...person}
-const newPerson1=Object.assign({},person)
 
 
 
 newPerson.name="Deepak"
 newPerson.adress.city="Bangalore"
 
-newPerson1.adress.state="karnataka"
 
-console.log(newPerson)
-console.log(person)
+// console.log(newPerson)
+// console.log(person)
 
 const arr1 = [2, 4, 5, 6,39 ,[45,89]];
+
+const newArr=[...arr1]
+
+newArr[5].splice(0,1)
+// newArr.splice(0,3)
+console.log(newArr)
+
+console.log(arr1)
+
 
