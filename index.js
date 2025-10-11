@@ -165,15 +165,26 @@
 
 const arr1 = [2, 4, 87, 862, 2, 5, 39, 2, 64];
 
-const display=()=>{
-  
+const display=(arr,num)=>{
+
+  for(let i=0;i<arr.length;i++ ){
+    if(arr[i]===num){
+      return true
+    }
+
+  }
+  return false
+
 }
 
-console.log(display(arr1,8628));
+console.log(display(arr1,4));
+
+const result1=arr1.includes(476)
+
+console.log(result1)
+
 
 // for(let i=0;i<arr1.length;i++){
 //   console.log(arr1[i])
 // }
 
- const result=arr1.indexOf(87)
- console.log(result)
