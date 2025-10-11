@@ -209,6 +209,7 @@
 
 
 
+const arr1 = [2, 4, 5, 6,39 ,[45,89]];
 
 const person={
   name:"Bobby",
@@ -233,14 +234,20 @@ newPerson.adress.city="Bangalore"
 // console.log(newPerson)
 // console.log(person)
 
-const arr1 = [2, 4, 5, 6,39 ,[45,89]];
+const arr2 = [45,46,47];
 
-const newArr=[...arr1]
+const str="Bob"
+// const str2=."by"
+let str3=str.concat("by")
 
-newArr[5].splice(0,1)
+// const newArr=[...arr1]
+const newArr=arr1.concat(arr2)
+
+
+// newArr[5].splice(0,1)
 // newArr.splice(0,3)
-console.log(newArr)
-
-console.log(arr1)
+// console.log(newArr)
+// console.log(arr1)
+console.log(str3)
 
 
