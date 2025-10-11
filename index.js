@@ -177,7 +177,7 @@
 
 // }
 
-// console.log(display(arr1,4));
+// console.log(display(arr1,4)); 
 
 // const result1=arr1.indexOf(87)
 
@@ -209,3 +209,23 @@
 
 
 
+// -----------------------------------------------------------------------
+
+// 3.check if 2 arrays are equal or not
+
+const checkIfEqual=(arr1,arr2)=>{
+
+  // if(arr1.length!==arr2.length) return false
+
+  // for(let i=0;i<arr1.length;i++){
+  //   if(arr1[i]!==arr2[i]) return false
+  // }
+
+
+
+  // return true
+
+  return arr1.length===arr2.length && arr1.every((element,i)=>arr1[i]===arr2[i])
+}
+
+console.log(checkIfEqual([1,2,3],[1,2,4]))
