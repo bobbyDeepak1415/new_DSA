@@ -251,13 +251,24 @@
 // console.log(arr1.reverse())
 
 // -----------------------------------------------------------------------------------
-
+  
 //  * Map, reduce,filter
+
+// const arr1 = [2, 5, 5, -6, 0.87, 162, 5, -39];
 
 // console.log(arr1.map((ele,i)=>ele*ele))
 // console.log(arr1.filter((ele,i)=>ele>0))
-const arr1 = [2, 5, 5, -6, 0.87, 162, 5, -39];
 
-console.log(arr1.reduce((acc, num) => (num > 0 ? acc + num : acc), 0));
+// console.log(arr1.reduce((acc, num) => (num > 0 ? acc + num : acc), 0));
 
-console.log(arr1);
+// console.log(arr1);
+
+// --------------------------------------------------------------------------------
+
+// *Flat
+
+const arr1 = [1,[2,[3,4,5,6],7,8],9,10]
+
+console.log(arr1.flat())
+console.log(arr1.flat(1))
+console.log(arr1.flat(2))
