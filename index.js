@@ -253,9 +253,9 @@
     // 5.how to reverse an array
     
     
-    // const arr1 = [2, 4, 5, 6, 87, 162, 5, -39];
+    const arr1 = [2, 4, 5, 6, 87, 162, 5, -39];
 
-    // console.log(arr1.reverse())
+    console.log(arr1)
 
 
     
