@@ -110,17 +110,23 @@
 
 // -----------------------------------------------------------------------------------
 
-// 3.Find unique elements in an array
+// 3.Find no of unique elements in an array
 
-let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+// let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 
-function display(nums) {
-    
-    
-    
+// function display(nums) {
+//   let k = 1;
+//   for (let i = 1; i < nums.length; i++) {
+//     if (nums[i] !== nums[i - 1]) {
+//       nums[k] = nums[i];
+//       k++;
+//     }
+//   }
+
+//   return k;
+// }
+
+// console.log(display(nums));
 
 
-
-}
-
-console.log(display(nums),nums);
+// 4.squares of sorted array
