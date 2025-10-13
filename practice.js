@@ -81,3 +81,8 @@
 // }
 
 // console.log(display(nums, 17));
+
+// -------------------------------------------------------------------------------------
+
+// 2.Majority Element(Given an array nums of size n, return the majority element
+
