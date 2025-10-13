@@ -128,22 +128,25 @@
 
 // console.log(display(nums));
 
+// --------------------------------------------------------------------------------
 
 // 4.squares of sorted array
 
-let nums = [-4, -1, 0, 3, 10];
+// let nums = [-4, -1, 0, 3, 10];
 
-function display(nums){
+// function display(nums){
 
+//     for(let i=0;i<nums.length;i++){
+//         nums[i]=nums[i]*nums[i]
+//     }
 
-    for(let i=0;i<nums.length;i++){
-        nums[i]=nums[i]*nums[i]
-    }
+//     return nums.sort((a,b)=>a-b)
 
-    return nums.sort((a,b)=>a-b)
-    
-}
+// }
 
+// console.log(display(nums));
 
+// ---------------------------------------------------------------------------------
 
-console.log(display(nums));
+// 5.Find Pivot Index(sum of numbers left of index should be equal to sum on the right)
+
