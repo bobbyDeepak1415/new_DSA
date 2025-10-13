@@ -86,3 +86,16 @@
 
 // 2.Majority Element(Given an array nums of size n, return the majority element
 
+ const nums = [2, 2, 1, 1, 1, 2, 2];
+
+function display(nums) {
+
+    
+  
+}
+
+console.log(display(nums));
+
+
+
+
