@@ -19,27 +19,35 @@
 // 2.(FizzBuzz) Given an integer n, return a string array answer (1-indexed) where:
 
 // function display(n) {
-    //   let arr = [];
-    
-    //   for (let i = 1; i <= n; i++) {
-        //     if (i % 3 === 0 && i % 5 === 0) {
-            //       arr.push("FizzBuzz");
-            //     } else if (i % 3 === 0) {
-                //       arr.push("Fizz");
-                //     } else if (i % 5 === 0) {
-                    //       arr.push("Buzz");
-                    //     } else {
-                        //       arr.push(i.toString());
-                        //     }
-                        //   }
-                        
-                        //   return arr;
-                        // }
-                        
-                        // console.log(display(15));
-                        
-                        // -------------------------------------------------------------------------------------------
-                        
-                        
+//   let arr = [];
+
+//   for (let i = 1; i <= n; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       arr.push("FizzBuzz");
+//     } else if (i % 3 === 0) {
+//       arr.push("Fizz");
+//     } else if (i % 5 === 0) {
+//       arr.push("Buzz");
+//     } else {
+//       arr.push(i.toString());
+//     }
+//   }
+
+//   return arr;
+// }
+
+// console.log(display(15));
+
+// --------------------------------------------------------------------------------------
+
 // 3.(Power of Two) Given an integer n, return true if it is a power of two. Otherwise, return false.
 
+// function display(n) {
+
+//     return n>0 && (n&(n-1))===0
+
+// }
+
+// console.log(display(63));
+
+// --------------------------------------------------------------------------------------
