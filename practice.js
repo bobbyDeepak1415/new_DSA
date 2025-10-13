@@ -88,5 +88,5 @@ function display(nums,target){
 
 
 
-// console.log(display())
+console.log(display())
 
