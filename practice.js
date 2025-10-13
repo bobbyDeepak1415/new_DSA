@@ -86,5 +86,24 @@
 
 // 2.Majority Element(Given an array nums of size n, return the majority element
 
-const nums = [2, 2, 2, 1, 1, 1, 2,5, 5, 5, 5, 5, 5];
+const nums = [2, 2, 2, 1, 1, 1, 2, 5, 5, 5, 5, 5, 5];
 
+function display(nums) {
+  let count = {};
+
+  let maxNum = nums[0];
+  let maxCount = 0;
+
+  for (let n of nums) {
+    count[n] = (count[n] || 0) + 1;
+
+    if (count[n] > maxCount) {
+      maxCount = count[n];
+      maxNum = n;
+    }
+  }
+
+  return maxNum;
+}
+
+console.log(display(nums));
