@@ -202,11 +202,19 @@
 
 // 7.remove element
 
-let nums = [3,2,2,3];
+let nums = [0, 1, 2, 2, 3, 0, 4, 2];
 
-function display(nums) {
+function display(nums, value) {
+  let k = 0;
 
-   
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] !== value) {
+      nums[k] = nums[i];
+      k++;
+    }
+  }
+
+  return k;
 }
 
-console.log(display(nums));
+console.log(display(nums, 2));
