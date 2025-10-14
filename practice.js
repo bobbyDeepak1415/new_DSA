@@ -150,3 +150,12 @@
 
 // 5.Find Pivot Index(sum of numbers left of index should be equal to sum on the right)
 
+let nums = [1, 7, 3, 6, 5, 6]
+
+function display(nums){
+
+    return nums
+   
+}
+
+console.log(display(nums));
