@@ -174,26 +174,39 @@
 
 // 6.move all zeroes in an array to left end
 
-let nums = [0, 1, 0, 3, 12];
+// let nums = [0, 1, 0, 3, 12];
+
+// function display(nums) {
+
+//     let k=0
+
+//     for(let i=0;i<nums.length;i++){
+//         if(nums[i]!==0){
+//             nums[k]=nums[i]
+//             k++
+//         }
+
+//     }
+
+//     for(let i=k;i<nums.length;i++){
+//         nums[i]=0
+//     }
+
+//     return nums
+
+// }
+
+// console.log(display(nums));
+
+// ------------------------------------------------------------------------------------
+
+// 7.remove element
+
+let nums = [3,2,2,3];
 
 function display(nums) {
 
-    let k=0
-
-    for(let i=0;i<nums.length;i++){
-        if(nums[i]!==0){
-            nums[k]=nums[i]
-            k++
-        }
-
-    }
-
-    for(let i=k;i<nums.length;i++){
-        nums[i]=0
-    }
-
-    return nums
-
+   
 }
 
 console.log(display(nums));
