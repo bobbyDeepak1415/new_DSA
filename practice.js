@@ -150,12 +150,23 @@
 
 // 5.Find Pivot Index(sum of numbers left of index should be equal to sum on the right)
 
-let nums = [1, 7, 3, 6, 5, 6]
+let nums = [1, 7, 3, 6, 5, 6];
 
-function display(nums){
+function display(nums) {
+  let total = nums.reduce((acc, num) => acc + num, 0);
 
-    return nums
-   
+  let leftSum = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    let rightSum = total - leftSum - nums[i];
+
+    if (leftSum === rightSum) {
+      return i;
+    }
+    leftSum += nums[i];
+  }
+
+  return -1;
 }
 
 console.log(display(nums));
