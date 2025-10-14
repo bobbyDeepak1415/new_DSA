@@ -153,20 +153,28 @@
 let nums = [1, 7, 3, 6, 5, 6];
 
 function display(nums) {
-  let total = nums.reduce((acc, num) => acc + num, 0);
 
-  let leftSum = 0;
 
-  for (let i = 0; i < nums.length; i++) {
-    let rightSum = total - leftSum - nums[i];
+    let total=nums.reduce((acc,num)=>acc+num,0)
+    let leftSum=0
 
-    if (leftSum === rightSum) {
-      return i;
+    for(let i=0;i<nums.length;i++){
+        let rightSum=total-leftSum-nums[i]
+        if(rightSum===leftSum){
+
+
+            return i
+        } 
+
+        leftSum+=nums[i]
+
+
+
     }
-    leftSum += nums[i];
-  }
 
-  return -1;
+    return -1
+
+
 }
 
 console.log(display(nums));
