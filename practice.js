@@ -223,10 +223,10 @@
 
 // 8.Max Consecutive Ones
 
- let nums = [0, 1, 2, 2, 3, 0, 4, 2];
+//  let nums = [0, 1, 2, 2, 3, 0, 4, 2];
 
-function display(nums, value) {
+// function display(nums, value) {
   
-}
+// }
 
-console.log(display(nums, 2));
+// console.log(display(nums, 2));
