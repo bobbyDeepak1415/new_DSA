@@ -170,14 +170,13 @@
 
 // console.log(display(nums));
 
-
 // --------------------------------------------------------------------------------------
 
 // 6.move all zeroes in an array
 
- function display(nums) {
+let nums = [0, 1, 0, 3, 12];
 
+function display(nums) {
 }
 
-// console.log(display(nums));
-
+console.log(display(nums));
