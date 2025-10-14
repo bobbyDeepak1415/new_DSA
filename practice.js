@@ -223,10 +223,21 @@
 
 // 8.Max Consecutive Ones
 
-//  let nums = [0, 1, 2, 2, 3, 0, 4, 2];
+// let nums = [1,1,0,1,1,1];
+// function display(nums) {
 
-// function display(nums, value) {
-  
+//     let result=[...nums].join("").split("0").map(x=>x.length)
+//     return Math.max(...result)
 // }
 
-// console.log(display(nums, 2));
+// console.log(display(nums));
+
+
+ let nums = [1,1,0,1,1,1];
+function display(nums) {
+
+
+    
+}
+
+console.log(display(nums));
