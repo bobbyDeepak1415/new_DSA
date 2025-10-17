@@ -1,5 +1,6 @@
 
-const name1="Bobby"
+const name1="bobby is a man,and bobby does his thing"
+// const arr1=["hello","chebc","eheb","hello"]
 
 
-console.log(name1.replace("bb","ll"))
+console.log(name1.replace("/bobby/g","Deepak"))
