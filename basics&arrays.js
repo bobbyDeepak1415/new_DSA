@@ -16,7 +16,7 @@
 
 // -------------------------------------------------------------------------------
 
-// 2.(FizzBuzz) Given an integer n, return a string array answer (1-indexed) where:
+// 2.(FizzBuzz) Given an integer n, return a string array answer (1-indexed)
 
 // function display(n) {
 //   let arr = [];
@@ -60,7 +60,7 @@
 
 // }
 
-// console.log(display(16));
+// console.log(display(26));
 
 // -----------------------------------------------------------------------------------
 
