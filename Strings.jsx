@@ -1,3 +1,5 @@
-const name1 = "Bobby";
 
-console.log(name1.search("y"));
+
+const name1="Bobby is a man"
+
+console.log(name1.split("is").toString())
