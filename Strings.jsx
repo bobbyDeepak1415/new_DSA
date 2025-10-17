@@ -1,19 +1,12 @@
-console.log("hello");
 
-const myName = "Bobby";
+// const arr1=  ['hello',"world","to","apple"]
+const arr1=  [45,87,4,9,12,6]
 
-function display(myName) {
+function display(arr1) {
 
-    let index
-
-  for (let i = 0; i < myName.length; i++) {
-    if (myName[i] === "y") {
-     index=i
-    }
-  }
-
-return index
-
+    let result=arr1.reduce((acc,num)=>acc+num)
+    return result
+  
 }
 
-console.log(display(myName))
+console.log(display(arr1))
