@@ -1,5 +1,5 @@
 
 
-const name1="Bobby is a man"
+const name1="Bobby Deepak is a front end developer.Also a man first"
 
-console.log(name1.split("is").toString())
+console.log(name1.split("."))
