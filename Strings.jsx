@@ -2,8 +2,8 @@
 
 // 1.find Index of needle
 
-let hayStack = "Bobby is a man and a Developer";
-let needle = "Developer";
+// let hayStack = "Bobby is a man and a Developer";
+// let needle = "Developer";
 
 // function display(hayStack,needle){
 
@@ -13,15 +13,24 @@ let needle = "Developer";
 
 // ------
 
-function display(hayStack, needle) {
+// function display(hayStack, needle) {
 
-for(let i=0;i<hayStack.length-needle.length;i++){
-  if()
-}
+//   for (let i = 0; i <= hayStack.length - needle.length; i++) {
+//     let found = true;
+//     for (let j = 0; j < needle.length; j++) {
+//       if (hayStack[i + j] !== needle[j]) {
+//         found = false;
+//         break;
+//       }
+//     }
 
+//     if (found) return i;
+//   }
 
-}
-console.log(display(hayStack, needle));
+//   return -1;
+// }
+
+// console.log(display(hayStack, needle));
 
 // ----------------------------------------------------------------------------
 
@@ -39,8 +48,8 @@ console.log(display(hayStack, needle));
 
 // 3.valid anagram
 
-let str1 = "a";
-let str2 = "ab";
+// let str1 = "anagram";
+// let str2 = "nagaram";
 
 // function display(str1, str2) {
 //   const sort1 = [...str1].sort((a, b) => a.localeCompare(b)).join("");
@@ -77,4 +86,4 @@ let str2 = "ab";
 
 // console.log(display(str1, str2));
 
-// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------
