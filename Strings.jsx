@@ -6,9 +6,14 @@ let hayStack = "Bobby is a man and a Developer";
 let needle = "Developer";
 
 
-function display(){
-  
+function display(hayStack,needle){
+
+  return hayStack.indexOf(needle)
+
+
 }
+
+console.log(display(hayStack,needle))
 
 // ----------------------------------------------------------------------------
 
