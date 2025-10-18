@@ -13,24 +13,15 @@ let needle = "Developer";
 
 // ------
 
-// function display(hayStack, needle) {
+function display(hayStack, needle) {
 
-//   for (let i = 0; i <= hayStack.length - needle.length; i++) {
-//     let found = true;
-//     for (let j = 0; j < needle.length; j++) {
-//       if (hayStack[i + j] !== needle[j]) {
-//         found = false;
-//         break;
-//       }
-//     }
+for(let i=0;i<hayStack.length-needle.length;i++){
+  if()
+}
 
-//     if (found) return i;
-//   }
 
-//   return -1;
-// }
-
-// console.log(display(hayStack, needle));
+}
+console.log(display(hayStack, needle));
 
 // ----------------------------------------------------------------------------
 
@@ -48,8 +39,8 @@ let needle = "Developer";
 
 // 3.valid anagram
 
-let str1 = "anagram";
-let str2 = "nagaram";
+let str1 = "a";
+let str2 = "ab";
 
 // function display(str1, str2) {
 //   const sort1 = [...str1].sort((a, b) => a.localeCompare(b)).join("");
@@ -64,23 +55,26 @@ let str2 = "nagaram";
 
 // -----------
 
-function display(str1, str2) {
-  if (str1.length !== str2.length) return;
+// function display(str1, str2) {
+//   if (str1.length !== str2.length) return false;
 
-  let count = {};
+//   let count = {};
 
-  for (let i = 0; i < str1.length; i++) {
-    let char = str1[i];
-    count[char] = (count[char] || 0) + 1;
-  }
+//   for (let i = 0; i < str1.length; i++) {
+//     let char = str1[i];
+//     count[char] = (count[char] || 0) + 1;
+//   }
 
-  for (let i = 0; i < str2.length; i++) {
-    let char = str2[i];
-    if (!count[char]) return false;
-    count[char]--;
-  }
+//   for(let i=0;i<str2.length;i++){
+//     let char=str2[i]
+//     if(!count[char]) return false
+//     count[char]--
+//   }
 
-  return true;
-}
+//   return true
 
-console.log(display(str1, str2));
+// }
+
+// console.log(display(str1, str2));
+
+// ------------------------------------------------------------------------------------------
