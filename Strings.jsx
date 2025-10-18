@@ -51,12 +51,23 @@ let needle = "Developer";
 let str1 = "anagram";
 let str2 = "nagaram";
 
+// function display(str1, str2) {
+//   const sort1 = [...str1].sort((a, b) => a.localeCompare(b)).join("");
+
+//   const sort2 = [...str2].sort((a, b) => a.localeCompare(b)).join("")
+
+//  return sort1===sort2
+ 
+// }
+
+// console.log(display(str1, str2));
+
+// -----------
+
 function display(str1, str2) {
-  const sort1 = [...str1].sort((a, b) => a.localeCompare(b)).join("");
 
-  const sort2 = [...str2].sort((a, b) => a.localeCompare(b)).join("")
 
- return sort1===sort2
+
  
 }
 
