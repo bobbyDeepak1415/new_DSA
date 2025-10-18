@@ -5,15 +5,29 @@
 let hayStack = "Bobby is a man and a Developer";
 let needle = "Developer";
 
+// function display(hayStack,needle){
 
-function display(hayStack,needle){
+//   return hayStack.indexOf(needle)
 
-  return hayStack.indexOf(needle)
+// }
+function display(hayStack, needle) {
+  
+  for (let i = 0; i <= hayStack.length - needle.length; i++) {
+    let found = true;
+    for (let j = 0; j < needle.length; j++) {
+      if (hayStack[i + j] !== needle[j]) {
+        found = false;
+        break;
+      }
+    }
 
+    if (found) return i;
+  }
 
+  return -1;
 }
 
-console.log(display(hayStack,needle))
+console.log(display(hayStack, needle));
 
 // ----------------------------------------------------------------------------
 
