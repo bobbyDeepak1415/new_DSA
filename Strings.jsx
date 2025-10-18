@@ -1,8 +1,8 @@
 
 const name1="Bobby"
 
-let sym="-"
+let arr1=["apples","grapes","oranges"]
 
 let name2="Deepak"
 
-console.log(name1.concat(sym,name2))
+console.log(arr1.concat(name2))
