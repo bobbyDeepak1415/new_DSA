@@ -13,3 +13,14 @@
 
 
 // ----------------------------------------------------------------------------
+
+// 2.reverse String
+
+
+let str = ["h", "e", "l", "l", "o"]; 
+
+function display(hayStack, needle) {
+  return hayStack.indexOf(needle);
+}
+
+// console.log(display(str));
