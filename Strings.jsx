@@ -20,7 +20,7 @@
 let str = ["h", "e", "l", "l", "o"]; 
 
 function display(hayStack, needle) {
-  return hayStack.indexOf(needle);
+  return str.reverse()
 }
 
-// console.log(display(str));
+console.log(display(str));
