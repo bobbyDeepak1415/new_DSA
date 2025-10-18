@@ -1,6 +1,8 @@
-const name1 = '"Bobby"';
 
-const objName = { name: name1 };
+const name1="Bobby"
 
-console.log(objName);
-console.log(JSON.parse(name1));
+let sym="-"
+
+let name2="Deepak"
+
+console.log(name1.concat(sym,name2))
