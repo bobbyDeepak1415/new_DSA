@@ -17,7 +17,7 @@
 // 2.reverse String
 
 
-let str = ["h", "e", "l", "l", "o"]; 
+let s = ["h", "e", "l", "l", "o"]; 
 
 function display(hayStack, needle) {
   return str.reverse()
