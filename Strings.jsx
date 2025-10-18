@@ -14,7 +14,7 @@ let needle = "Developer";
 // ------
 
 // function display(hayStack, needle) {
-  
+
 //   for (let i = 0; i <= hayStack.length - needle.length; i++) {
 //     let found = true;
 //     for (let j = 0; j < needle.length; j++) {
@@ -48,16 +48,16 @@ let needle = "Developer";
 
 // 3.valid anagram
 
+let str1 = "anagram";
+let str2 = "nagaram";
 
+function display(str1, str2) {
+  const sort1 = [...str1].sort((a, b) => a.localeCompare(b)).join("");
 
-let str1 = "anagram"
-let str2="nagaram"
+  const sort2 = [...str2].sort((a, b) => a.localeCompare(b)).join("")
 
-function display(str1,str2) {
-
-  const sort1=str1
-
+ return sort1===sort2
  
 }
 
-// console.log(display(str1,str2));
+console.log(display(str1, str2));
