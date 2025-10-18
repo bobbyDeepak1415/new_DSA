@@ -10,24 +10,27 @@ let needle = "Developer";
 //   return hayStack.indexOf(needle)
 
 // }
-function display(hayStack, needle) {
+
+// ------
+
+// function display(hayStack, needle) {
   
-  for (let i = 0; i <= hayStack.length - needle.length; i++) {
-    let found = true;
-    for (let j = 0; j < needle.length; j++) {
-      if (hayStack[i + j] !== needle[j]) {
-        found = false;
-        break;
-      }
-    }
+//   for (let i = 0; i <= hayStack.length - needle.length; i++) {
+//     let found = true;
+//     for (let j = 0; j < needle.length; j++) {
+//       if (hayStack[i + j] !== needle[j]) {
+//         found = false;
+//         break;
+//       }
+//     }
 
-    if (found) return i;
-  }
+//     if (found) return i;
+//   }
 
-  return -1;
-}
+//   return -1;
+// }
 
-console.log(display(hayStack, needle));
+// console.log(display(hayStack, needle));
 
 // ----------------------------------------------------------------------------
 
@@ -44,3 +47,17 @@ console.log(display(hayStack, needle));
 // -------------------------------------------------------------------------------
 
 // 3.valid anagram
+
+
+
+let str1 = "anagram"
+let str2="nagaram"
+
+function display(str1,str2) {
+
+  const sort1=str1
+
+ 
+}
+
+// console.log(display(str1,str2));
