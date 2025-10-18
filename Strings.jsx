@@ -57,7 +57,7 @@ let str2 = "nagaram";
 //   const sort2 = [...str2].sort((a, b) => a.localeCompare(b)).join("")
 
 //  return sort1===sort2
- 
+
 // }
 
 // console.log(display(str1, str2));
@@ -65,10 +65,22 @@ let str2 = "nagaram";
 // -----------
 
 function display(str1, str2) {
+  if (str1.length !== str2.length) return;
 
+  let count = {};
 
+  for (let i = 0; i < str1.length; i++) {
+    let char = str1[i];
+    count[char] = (count[char] || 0) + 1;
+  }
 
- 
+  for (let i = 0; i < str2.length; i++) {
+    let char = str2[i];
+    if (!count[char]) return false;
+    count[char]--;
+  }
+
+  return true;
 }
 
 console.log(display(str1, str2));
