@@ -1,6 +1,6 @@
 // Questions
 
-
+// hashmap brackets 
 function isValidBrackets(str) {
   const map = { ')': '(', ']': '[', '}': '{' };
   const stack = [];
@@ -32,7 +32,7 @@ console.log(isValidBrackets("{ [ ( ] ) }"));               // false
 
 
 
-
+// -----------------------------------------------------------------------------------------
 
 
 
