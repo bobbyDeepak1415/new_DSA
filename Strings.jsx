@@ -2,30 +2,31 @@
 
 // hashmap brackets 
 function isValidBrackets(str) {
-  const map = { ')': '(', ']': '[', '}': '{' };
-  const stack = [];
 
-  for (let char of str) {
-    if (['(', '[', '{'].includes(char)) {
-      stack.push(char); // push opening brackets
-    } else if ([')', ']', '}'].includes(char)) {
-      if (stack.pop() !== map[char]) {
-        return false; // closing bracket doesn't match
+  const map = { ")": "(", "}": "{", "]": "[" };
+
+  const stack=[]
+
+  for(let i=0;i<str.length;i++){
+    let char=str[i]
+    if(["{","[","("].includes(char)){
+      stack.push(char)
+    }else if(["}","]",")"].includes(char)){
+      if(stack.pop()!==map[char]){
+        return false
       }
     }
   }
+ 
+return stack.length===0
 
-  return stack.length === 0; // all brackets matched
+
 }
 
 // Test cases
-console.log(isValidBrackets("{[{[[]]}]}"));           
-console.log(isValidBrackets("[{((),[],[()])}]"));     // true
-console.log(isValidBrackets("{{[}})"));               // false
-console.log(isValidBrackets("{[()]}"));   
-            // true
-console.log(isValidBrackets("{ [ ( ] ) }"));               // false
-
+// console.log(isValidBrackets("{[{[[]]}]}"));           
+// console.log(isValidBrackets("[{((),[],[()])}]"));     // true
+// console.log(isValidBrackets("{{[}})"));               // false
 
 
 
