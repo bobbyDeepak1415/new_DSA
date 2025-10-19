@@ -1,42 +1,36 @@
 // Questions
 
-// hashmap brackets 
-function isValidBrackets(str) {
+// hashmap brackets
 
-  const map = { ")": "(", "}": "{", "]": "[" };
+// function isValidBrackets(str) {
 
-  const stack=[]
+//   const map = { ")": "(", "}": "{", "]": "[" };
 
-  for(let i=0;i<str.length;i++){
-    let char=str[i]
+//   const stack=[]
 
-    if(["{","[","("].includes(char)){
-      stack.push(char)
-    }else if(["}","]",")"].includes(char)){
-      if(stack.pop()!==map[char]){
-        return false
-      }
-    }
+//   for(let i=0;i<str.length;i++){
+//     let char=str[i]
 
-  }
+//     if(["{","[","("].includes(char)){
+//       stack.push(char)
+//     }else if(["}","]",")"].includes(char)){
+//       if(stack.pop()!==map[char]){
+//         return false
+//       }
+//     }
 
-  return stack.length===0
+//   }
 
-}
+//   return stack.length===0
+
+// }
 
 // Test cases
-// console.log(isValidBrackets("{[{[[]]}]}"));           
+// console.log(isValidBrackets("{[{[[]]}]}"));
 // console.log(isValidBrackets("[{((),[],[()])}]"));     // true
 // console.log(isValidBrackets("{{[}})"));               // false
 
-
-
-
-
-
 // -----------------------------------------------------------------------------------------
-
-
 
 // 1.find Index of needle
 
