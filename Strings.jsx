@@ -1,5 +1,17 @@
 // Questions
 
+
+
+
+
+
+
+
+
+
+
+
+
 // 1.find Index of needle
 
 // let hayStack = "Bobby is a man and a Developer";
