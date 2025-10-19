@@ -9,6 +9,7 @@ function isValidBrackets(str) {
 
   for(let i=0;i<str.length;i++){
     let char=str[i]
+
     if(["{","[","("].includes(char)){
       stack.push(char)
     }else if(["}","]",")"].includes(char)){
@@ -16,10 +17,10 @@ function isValidBrackets(str) {
         return false
       }
     }
-  }
- 
-return stack.length===0
 
+  }
+
+  return stack.length===0
 
 }
 
