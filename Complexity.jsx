@@ -26,21 +26,18 @@
 
 // --------------------------------------------------------------------------------
 
-// 3.log(n)
+// // 3.log(n)
 
-
-// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
-
-// function display(nums) {
+// function display(n) {
 //   let arr = [];
-//   for (let i = 1; i < nums.length; i = i * 2) {
-//     arr.push(nums[i]);
+//   for (let i = 1; i < n; i = i * 2) {
+//     arr.push(i);
 //   }
 
 //   return arr;
 // }
 
-// console.log(display(nums));
+// console.log(display(16));
 
 // how many times can you double 1 before it reaches n
 
@@ -48,6 +45,19 @@
 // 2^k=n
 // k=logn
 
-
 // --------------------------------------------------------------------------------
 
+// 4.
+
+
+
+function display(n) {
+  let arr = [];
+  for (let i = 1; i < n; i = i * 2) {
+    arr.push(i);
+  }
+
+  return arr;
+}
+
+// console.log(display(16));
