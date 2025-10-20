@@ -120,18 +120,23 @@
 
 // ------------------------------------------------------------------------------------
 
-
 // 4.longest common prefix
 
-let strs = ["flower","flow","flight"]
+let strs = ["flower", "flow", "flight"];
 
-function display(str1, str2) {
-  const sort1 = [...str1].sort((a, b) => a.localeCompare(b)).join("");
+function display(strs) {
+  if (strs.length === 0) return;
 
-  const sort2 = [...str2].sort((a, b) => a.localeCompare(b)).join("")
+  let prefix = strs[0];
 
- return sort1===sort2
+  for (let i = 1; i < strs.length; i++) {
+    while (strs[i].indexOf(prefix) !== 0) {
+      prefix = prefix.slice(0, -1);
+    }
 
+    if(prefix==="") return ""
+  }
+  return prefix;
 }
 
 console.log(display(strs));
