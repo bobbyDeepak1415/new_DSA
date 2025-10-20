@@ -47,17 +47,20 @@
 
 // --------------------------------------------------------------------------------
 
-// 4.
+// 4.log(n)
 
 
 
-function display(n) {
-  let arr = [];
-  for (let i = 1; i < n; i = i * 2) {
-    arr.push(i);
+function display(num) {
+  let sum=0
+  
+
+  while(num>0){
+    sum+=num%10
+    num=Math.floor(num/10)
   }
 
-  return arr;
+  return sum;
 }
 
-// console.log(display(16));
+console.log(display(16));
