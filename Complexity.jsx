@@ -49,18 +49,17 @@
 
 // 4.log(n)
 
-
-
 function display(num) {
-  let sum=0
-  
+  let sum = 0;
 
-  while(num>0){
-    sum+=num%10
-    num=Math.floor(num/10)
+  while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
   }
 
   return sum;
 }
 
 console.log(display(16));
+
+// whenever an input is being multiplied or divided by a certain number, the time complexity becomes the log of that number,ie, the time complexity basically becomes log(n)
