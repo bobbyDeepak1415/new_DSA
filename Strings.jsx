@@ -199,15 +199,28 @@
 
 // 6.length of last word
 
-let str = "   fly me   to   the moon  ";
+// let str = "   fly me   to   the moon  ";
 // let str1 = "hello world";
+
+// function display(str) {
+
+//   return str.trimEnd().split(" ").at(-1).length
+
+// }
+
+// console.log(display(str));
+
+// -------------------------------------------------------------------------------
+
+// 7.valid palindrome
+
+let str1 = "A man, a plan, a canal: Panama";
+let str2 = "hello world";
 
 function display(str) {
 
-  return str.trimEnd().split(" ").at(-1).length
-
+ 
+  return rev === str;
 }
 
-console.log(display(str));
-
-
+console.log(display(str1));
