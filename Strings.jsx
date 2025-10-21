@@ -168,10 +168,7 @@
 
 // console.log(display(word1, word2));
 
-
-
 // ----------------------------
-
 
 // function display(word1, word2) {
 //   let ans = "";
@@ -198,11 +195,26 @@
 
 // console.log(display(word1, word2));
 
-
 // ------------------------------------------------------------------------------------
 
 // 6.length of last word
 
-let word1 = "abcdef";
-let word2 = "pqr";
+// let str = "   fly me   to   the moon  ";
+let str = "hello world";
 
+function display(str) {
+  let ans = "";
+
+  for (let i = str.length; i > 0; i--) {
+    if (i !== "") {
+      ans += str[i];
+    } else if (i === " ") {
+      break;
+    }
+  }
+
+  return ans.split("").reverse().join("")
+
+}
+
+console.log(display(str));
