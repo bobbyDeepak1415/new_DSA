@@ -223,7 +223,6 @@
 //     str=str.replace(/[^0-9a-z^]/g,"")
 //     let rev=str.split("").reverse().join("")
 
- 
 //   return rev === str;
 // }
 
@@ -233,17 +232,10 @@
 
 // 8.string compression
 
-let str2 = "the sky is blue";
+let str2 = "     a good   example";
 
 function display(str) {
-
-    
-
-    return str.trim().split(" ").reverse().join(" ")
-
-
-
-    
+  return str.trim().split(/\s+/).reverse().join(" ");
 }
 
 console.log(display(str2));
