@@ -200,21 +200,20 @@
 // 6.length of last word
 
 // let str = "   fly me   to   the moon  ";
-let str = "hello world";
+// let str = "hello world";
 
-function display(str) {
-  let ans = "";
+// function display(str) {
+//   let ans = "";
 
-  for (let i = str.length; i > 0; i--) {
-    if (i !== "") {
-      ans += str[i];
-    } else if (i === " ") {
-      break;
-    }
-  }
+// // 
+//   return str.trim()
 
-  return ans.split("").reverse().join("")
+// }
 
-}
+// console.log(display(str));
 
-console.log(display(str));
+
+
+let arr1=["abc","chcbe","jyrg"]
+
+console.log(arr1.at(2))
