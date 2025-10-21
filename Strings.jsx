@@ -200,20 +200,14 @@
 // 6.length of last word
 
 // let str = "   fly me   to   the moon  ";
-// let str = "hello world";
+// let str1 = "hello world";
 
 // function display(str) {
-//   let ans = "";
 
-// // 
-//   return str.trim()
+//   return str.trimEnd().split(" ").at(-1).length
 
 // }
 
 // console.log(display(str));
 
 
-
-let arr1=["abc","chcbe","jyrg"]
-
-console.log(arr1.at(2))
