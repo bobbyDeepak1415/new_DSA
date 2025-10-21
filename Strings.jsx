@@ -215,7 +215,7 @@
 // 7.valid palindrome
 
 // let str1 = "A man, a plan, a canal: Panama";
-let str2 = "hello world";
+// let str2 = "hello world";
 
 // function display(str) {
 
@@ -229,3 +229,21 @@ let str2 = "hello world";
 
 // console.log(display(str1));
 
+// -----------------------------------------------------------------------------------
+
+// 8.string compression
+
+let str2 = "the sky is blue";
+
+function display(str) {
+
+    
+
+    return str.trim().split(" ").reverse().join(" ")
+
+
+
+    
+}
+
+console.log(display(str2));
