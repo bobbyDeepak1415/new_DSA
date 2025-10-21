@@ -146,24 +146,28 @@
 
 // 5.merge strings alternatively
 
-let word1 = "abcdef";
-let word2 = "pqr";
+// let word1 = "abcdef";
+// let word2 = "pqr";
 
-function display(word1, word2) {
-  let ans = "";
-  let m = word1.length;
-  let n = word2.length;
+// function display(word1, word2) {
+//   let ans = "";
+//   let m = word1.length;
+//   let n = word2.length;
 
-  for (let i = 0; i <Math.max( m, n); i++) {
-    if (i < m) {
-      ans += word1[i];
-    }
-    if (i < n) {
-      ans += word2[i];
-    }
-  }
+//   for (let i = 0; i <Math.max( m, n); i++) {
+//     if (i < m) {
+//       ans += word1[i];
+//     }
+//     if (i < n) {
+//       ans += word2[i];
+//     }
+//   }
 
-  return ans;
-}
+//   return ans;
+// }
 
-console.log(display(word1, word2));
+// console.log(display(word1, word2));
+
+// ------------------------------------------------------------------------------------
+
+// 6.length of last word
