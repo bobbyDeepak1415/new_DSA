@@ -148,12 +148,15 @@
 function sum(a,b){
     return a+b
 }
+function sum2(a,b,c){
+    return a+b+c
+}
 
 function product(a,b,c){
     return a*b*c
 }
 
-function getUniqueId(...args){
+function getUniqueId(fn,args){
 
     let uniqueId=[]
 
@@ -167,17 +170,22 @@ function memoize(fn){
 
     let cache={}
 
-    return function(...args){
-
+    return function (...args){
         let uniqueId=getUniqueId(fn,args)
 
-        if(cache[uniqueId]) return cache[uniqueId]
+        if(cache[uniqueId]) {
+            console.log("fron cache",cache[uniqueId])
 
-        cache[uniqueId]=fn(...args)
+        }
+
+     cache[uniqueId]=fn(...args)
+     console.log("not from cache")
         return cache[uniqueId]
+
 
     }
 
+    
 
 }
 
@@ -185,10 +193,13 @@ function memoize(fn){
 
 
 const result=memoize(sum)
+const result2=memoize(sum2)
 const result1=memoize(product)
 
 console.log(result(2,3))
-console.log(result1(2,3,4))
+console.log(result1(2,3,3))
+console.log(result1(2,3,3))
+console.log(result2(2,3,3))
 
 
 
