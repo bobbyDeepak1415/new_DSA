@@ -80,8 +80,8 @@
 
 // 3.valid anagram
 
-let str1 = "anagram";
-let str2 = "nagaram";
+// let str1 = "anagram";
+// let str2 = "nagaram";
 
 // function display(str1, str2) {
 //   const sort1 = [...str1].sort((a, b) => a.localeCompare(b)).join("");
@@ -96,27 +96,27 @@ let str2 = "nagaram";
 
 // -----------
 
-function display(str1, str2) {
-  if (str1.length !== str2.length) return false;
+// function display(str1, str2) {
+//   if (str1.length !== str2.length) return false;
 
-  let count = {};
+//   let count = {};
 
-  for (let i = 0; i < str1.length; i++) {
-    let char = str1[i];
-    count[char] = (count[char] || 0) + 1;
-  }
+//   for (let i = 0; i < str1.length; i++) {
+//     let char = str1[i];
+//     count[char] = (count[char] || 0) + 1;
+//   }
 
-  for(let i=0;i<str2.length;i++){
-    let char=str2[i]
-    if(!count[char]) return false
-    count[char]--
-  }
+//   for(let i=0;i<str2.length;i++){
+//     let char=str2[i]
+//     if(!count[char]) return false
+//     count[char]--
+//   }
 
-  return true
+//   return true
 
-}
+// }
 
-console.log(display(str1, str2));
+// console.log(display(str1, str2));
 
 // ------------------------------------------------------------------------------------
 
@@ -143,3 +143,27 @@ console.log(display(str1, str2));
 // console.log(display(strs));
 
 // -------------------------------------------------------------------------------
+
+// 5.merge strings alternatively
+
+let word1 = "abcdef";
+let word2 = "pqr";
+
+function display(word1, word2) {
+  let ans = "";
+  let m = word1.length;
+  let n = word2.length;
+
+  for (let i = 0; i <Math.max( m, n); i++) {
+    if (i < m) {
+      ans += word1[i];
+    }
+    if (i < n) {
+      ans += word2[i];
+    }
+  }
+
+  return ans;
+}
+
+console.log(display(word1, word2));
