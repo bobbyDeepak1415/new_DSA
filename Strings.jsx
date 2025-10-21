@@ -214,17 +214,18 @@
 
 // 7.valid palindrome
 
-let str1 = "A man, a plan, a canal: Panama";
+// let str1 = "A man, a plan, a canal: Panama";
 let str2 = "hello world";
 
-function display(str) {
+// function display(str) {
 
-    str=str.toLowerCase()
-    str=str.replace(/[^0-9a-z^]/g,"")
-    let rev=str.split("").reverse().join("")
+//     str=str.toLowerCase()
+//     str=str.replace(/[^0-9a-z^]/g,"")
+//     let rev=str.split("").reverse().join("")
 
  
-  return rev === str;
-}
+//   return rev === str;
+// }
 
-console.log(display(str1));
+// console.log(display(str1));
+
