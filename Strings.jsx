@@ -122,24 +122,82 @@
 
 // 4.longest common prefix
 
-let strs = ["flower", "flow", "flight"];
+// let strs = ["flower", "flow", "flight"];
 
-function display(strs) {
-  if (strs.length === 0) return;
+// function display(strs) {
+//   if (strs.length === 0) return;
 
-  let prefix = strs[0];
+//   let prefix = strs[0];
 
-  for (let i = 1; i < strs.length; i++) {
-    while (strs[i].indexOf(prefix) !== 0) {
-      prefix = prefix.slice(0, -1);
-    }
+//   for (let i = 1; i < strs.length; i++) {
+//     while (strs[i].indexOf(prefix) !== 0) {
+//       prefix = prefix.slice(0, -1);
+//     }
 
-    if (prefix.length === 0) return "";
-  }
+//     if (prefix.length === 0) return "";
+//   }
 
-  return prefix;
+//   return prefix;
+// }
+
+// console.log(display(strs));
+
+
+
+
+function sum(a,b){
+    return a+b
 }
 
-console.log(display(strs));
+function product(a,b,c){
+    return a*b*c
+}
+
+function getUniqueId(...args){
+
+    let uniqueId=[]
+
+    uniqueId=uniqueId.concat(args).join("|")
+    return uniqueId
+
+}
+
+
+function memoize(fn){
+
+    let cache={}
+
+    return function(...args){
+
+        let uniqueId=getUniqueId(fn,args)
+
+        if(cache[uniqueId]) return cache[uniqueId]
+
+        cache[uniqueId]=fn(...args)
+        return cache[uniqueId]
+
+    }
+
+
+}
+
+
+
+
+const result=memoize(sum)
+const result1=memoize(product)
+
+console.log(result(2,3))
+console.log(result1(2,3,4))
+
+
+
+
+
+
+
+
+
+
 
 // -------------------------------------------------------------------------------
