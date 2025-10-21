@@ -219,6 +219,10 @@ let str2 = "hello world";
 
 function display(str) {
 
+    str=str.toLowerCase()
+    str=str.replace(/[^0-9a-z^]/g,"")
+    let rev=str.split("").reverse().join("")
+
  
   return rev === str;
 }
