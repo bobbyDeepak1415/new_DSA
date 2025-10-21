@@ -168,6 +168,41 @@
 
 // console.log(display(word1, word2));
 
+
+
+// ----------------------------
+
+
+// function display(word1, word2) {
+//   let ans = "";
+
+//   let m = word1.length;
+//   let n = word2.length;
+
+//   let i = 0;
+//   let j = 0;
+
+//   while (i < m || j < n) {
+//     if (i < m) {
+//       ans += word1[i];
+//       i++;
+//     }
+//     if (j < n) {
+//       ans += word2[j];
+//       j++;
+//     }
+//   }
+
+//   return ans;
+// }
+
+// console.log(display(word1, word2));
+
+
 // ------------------------------------------------------------------------------------
 
 // 6.length of last word
+
+let word1 = "abcdef";
+let word2 = "pqr";
+
