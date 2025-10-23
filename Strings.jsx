@@ -1,5 +1,25 @@
 // Questions
 
+// First repeating character
+
+// let str = "success";
+
+// function display(str) {
+//   let obj = {};
+
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     if (obj[char]) return char;
+//     obj[char] = true;
+//   }
+
+//   return null;
+// }
+
+// console.log(display(str));
+
+// ----------------------------------------------------------------------------------------------------
+
 // hashmap brackets
 
 // function isValidBrackets(str) {
@@ -235,7 +255,7 @@
 let str2 = "     a good   example";
 
 function display(str) {
-  return str.trim().split(/\s+/).reverse().join(" ");
+  return str.trim().split(/\s+/).join(" ");
 }
 
 console.log(display(str2));
