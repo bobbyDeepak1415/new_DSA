@@ -4,14 +4,14 @@
 function display(n){
 
     let sum=0
-    while(n>0){
 
-        sum+=n%10
-        n=Math.floor(n/10)
-    }
-
-    return sum
+   let result=JSON.stringify(n).split("")
    
+   for(let i=0;i<result.length;i++){
+sum+=Number(result[i])
+   }
+
+   return sum
 }
 
 
