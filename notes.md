@@ -11,3 +11,4 @@ Time Complexity formulae:
 - A number n has about log₁₀(n) digits because log₁₀(n) tells you how many times 10 fits inside n.
 
 - whenever a number is multiplied or divided by a certain number, then the time complexity becomes the log of that number
+..
