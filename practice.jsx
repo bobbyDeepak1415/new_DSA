@@ -1,18 +1,19 @@
-// 1. sum of 1 to n
+// 2.sum of digits of a number
 
 
 function display(n){
 
-
     let sum=0
-    for(let i=0;i<=n;i++){
-        sum+=i
+    while(n>0){
+
+        sum+=n%10
+        n=Math.floor(n/10)
     }
 
     return sum
-
+   
 }
 
 
 
-console.log(display(5))
+console.log(display(918))
