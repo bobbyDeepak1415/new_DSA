@@ -1,19 +1,14 @@
-// 2.sum of digits of a number
+// 3. count the number of digits in a number
 
 
 function display(n){
 
-    let sum=0
+    let arr1=JSON.stringify(Math.abs(n)).split("")
+    return arr1.length
 
-   let result=JSON.stringify(n).split("")
    
-   for(let i=0;i<result.length;i++){
-sum+=Number(result[i])
-   }
-
-   return sum
 }
 
 
 
-console.log(display(918))
+console.log(display(-9199088))
