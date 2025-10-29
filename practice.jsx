@@ -1,18 +1,16 @@
-// 6.number present or not
+// 7.number present or not
 
 let arr1 = [ 12, 2, 33, 41, 52, 6, 71, 80, 9, 10];
 
 
-function display(num){
+function display(num,arr){
 
-  let sum=0
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]===num) return true
+    }
 
-  while(num>0){
-    sum+=num%10
-    num=Math.floor(num/10)
-
-  }
-  return sum
+    return false
+  
 }
 
-console.log(display(80))
+console.log(display(52,arr1))
