@@ -1,5 +1,9 @@
 // 4.map,reduce,filter
 
-let arr1 = [12, [21, 4], 1, 9, [1, 2, [33, 7, 44], 42, 24]];
+let arr1 = [12,  1, 2 ,3, 4, 33, 7, 44, 42, 24];
 
-console.log(arr1.flat(2));
+
+arr1.splice(6,1,44,55,66)
+
+console.log(arr1)
+
