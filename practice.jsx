@@ -1,6 +1,6 @@
-// 6.missing number
+// 6.number present or not
 
-// let arr1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arr1 = [ 12, 2, 33, 41, 52, 6, 71, 80, 9, 10];
 
 
 function display(num){
@@ -15,4 +15,4 @@ function display(num){
   return sum
 }
 
-console.log(display(45792))
+console.log(display(80))
