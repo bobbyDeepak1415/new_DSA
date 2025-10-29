@@ -5,7 +5,19 @@
 
 function display(num) {
 
+    if(num===0) return 0
+    if(num===1) return 1
 
-    
+
+    let current=1
+    let next=0
+    let prev=0
+
+    for()
+
+
+
 }
-console.log(display(3));
+
+
+console.log(display(7))
