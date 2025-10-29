@@ -1,12 +1,20 @@
-// 7.number present or not
+// 3.2 arrays are equal or not
 
-let arr1 = [12, 2, 33];
-let arr2 = [12, 2, 33];
+let arr1 = [12, 21, 33];
+let arr2 = [12, 21, 33];
+
+function display(arr1, arr2) {
+
+    if(arr1.length!==arr2.length) return false
+
+    for(let i=0;i<arr1.length;i++){
+        if(arr1[i]!==arr2[i]) return false
+    }
+
+    return true
 
 
-function display(arr1,arr2){
 
 }
 
-console.log(arr1,arr2)
-
+console.log(display(arr1,arr2));
