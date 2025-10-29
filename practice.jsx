@@ -14,3 +14,6 @@ function display(num,arr){
 }
 
 console.log(display(52,arr1))
+
+const result=arr1.indexOf(33)
+console.log(result)
