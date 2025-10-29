@@ -1,12 +1,12 @@
-// 3.2 arrays are equal or not
+// 4.sort an array
 
-let arr1 = [12, 21, 33];
-let arr2 = [12, 21, 33];
+let arr1 = [12, 21, 4, 1, 9, 1, 2, 33];
 
-function display(arr1, arr2) {
-  return (
-    arr1.length === arr2.length && arr1.every((ele, i) => arr1[i] === arr2[i])
-  );
+function display(arr1) {
+
+    return arr1.sort((a,b)=>b-a)
+
+
 }
 
-console.log(display(arr1, arr2));
+console.log(display(arr1));
