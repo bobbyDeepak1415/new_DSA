@@ -1,9 +1,7 @@
-// 4.sort an array
+// 4.map,reduce,filter
 
-let arr1 = [12, 21, 4, 1, 9, 1, 2, 33];
+let arr1 = [12, -21, 4, -1, 9, 1, -2, 33];
 
-function display(arr1) {
-  return arr1.reverse()
-}
+const result=arr1.map((num,index)=>num*num)
 
-console.log(display(arr1));
+console.log(result);
