@@ -1,23 +1,14 @@
-// 5.fibonacci
+// 5.missing number
 
-// 0,1,1,2,3,5,8,13
-// 0,1,2,3,4,5,6,7
+let arr1=[0,1,2,3,4,5,6,7,8,10]
 
-function display(num) {
-  if (num === 0) return 0;
-  if (num === 1) return 1;
+function display(arr) {
 
-  let current = 1;
-  let next = 0;
-  let prev = 0;
+    let sum=arr.reduce((a,b)=>a+b,0)
 
-  for (let i = 2; i <= num; i++) {
-      next = current + prev;
-      prev = current;
-    current = next;
-  }
+    return (arr.length*arr.length+1)
 
-  return next;
+
+
 }
-
-console.log(display(7));
+console.log(display(arr1));
