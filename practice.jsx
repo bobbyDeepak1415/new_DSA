@@ -2,18 +2,16 @@
 
 let arr1 = [ 12, 2, 33, 41, 52, 6, 71, 80, 9, 10];
 
+// delete and update
 
-function display(num,arr){
+// function display(num,arr){
 
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]===num) return true
-    }
 
-    return false
   
-}
+  
+// }
 
-console.log(display(52,arr1))
+// console.log(display(52,arr1))
 
-const result=arr1.indexOf(33)
-console.log(result)
+arr1.splice(1,3,34,55,66)
+console.log(arr1)
