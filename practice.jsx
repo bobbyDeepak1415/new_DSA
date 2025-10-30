@@ -1,18 +1,13 @@
-// 1.fizzNBuzz
+// 1.sqrt
+
+// function display(num) {
+//   return num > 0 && (num & (num - 1)) === 0;
+// }
+
+// console.log(display(64));
 
 function display(num) {
-
-    let arr1=[]
-
-    for(let i=0;i<=num;i++){
-        if(i%3===0 && i%5===0) arr1.push("FizzBuzz")
-       else if(i%3===0 ) arr1.push("Fizz")
-       else if(i%5===0) arr1.push("Buzz")
-       else  arr1.push(i)
-    }
-return arr1
-
- 
+  return Math.floor(Math.sqrt(num))
 }
 
-console.log(display(15));
+console.log(display(85));
