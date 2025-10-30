@@ -1,4 +1,4 @@
-// 1.array questions
+// 1.two sum
 
 const arr1 = [3, 8, 5, 9, 2, 4];
 
