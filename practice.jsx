@@ -1,14 +1,16 @@
 // 1.fizzNBuzz
 
-// let arr1 = [5, 15, 25, 30, 45, 35, 3];
-function display(num) {
-    
-    if (num % 3 === 0 && num % 5 === 0) return "FizzBuzz";
-    if (num % 3 === 0) return "Fizz"
-    if (num % 5 === 0) return "Buzz"
+let arr1 = [7, 5, 15, 25, 22, 30, 45, 35, 3];
+function display(arr1) {
+  //   let local = [];
 
-    else return "false"
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] % 3 === 0 && arr1[i] % 5 === 0) arr1[i] = "FizzBuzz";
+    else if (arr1[i] % 3 === 0) arr1[i] = "Fizz";
+    else if (arr1[i] % 5 === 0) arr1[i] = "Buzz";
+  }
 
+  return arr1;
 }
 
-console.log(display(45));
+console.log(display(arr1));
