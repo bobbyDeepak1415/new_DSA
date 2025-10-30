@@ -1,14 +1,16 @@
-// 1.count odd nums
-function display(low, high) {
-  
-    let count=0
-    for(let i=low;i<=high;i++){
-        if(i%2!==0) count++
-    }
+// 1.fizzNBuzz
 
-    return count
+let arr1 = [5, 15, 25, 30, 45, 35, 3];
+function display(arr1) {
+  let local = [];
 
+  for (let i = 0; i < local.length; i++) {
+    if (i % 3 === 0) local.push("Fizz");
+    if (i % 5 === 0) local.push("Buzz");
+    if (i % 3 === 0 && i % 5 === 0) arr1.push("FizzBuzz");
+  }
 
+  return local;
 }
 
-console.log(display(1, 10));
+console.log(display(arr1));
