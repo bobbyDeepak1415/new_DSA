@@ -26,7 +26,9 @@
 
 //   const map = { ")": "(", "}": "{", "]": "[" };
 
-//   const stack=[]
+//   const stack=["{","{","["]
+
+// 
 
 //   for(let i=0;i<str.length;i++){
 //     let char=str[i]
