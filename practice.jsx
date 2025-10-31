@@ -9,10 +9,11 @@ function display(str) {
   let stack = [];
 
   for (let i = 0; i < str.length; i++) {
-    if (["{", "[", "("].includes(str[i])) {
-      stack.push(str[i]);
-    } else if (["}", "]", ")"].includes(str[i])) {
-      if (stack.pop() !== map[str[i]]) return false;
+    let char= str[i]
+    if (["{", "[", "("].includes(char)) {
+      stack.push(char);
+    } else if (["}", "]", ")"].includes(char)) {
+      if (stack.pop() !== map[char]) return false;
     }
   }
 
