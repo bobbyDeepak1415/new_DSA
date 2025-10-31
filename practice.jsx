@@ -1,24 +1,11 @@
 // 1.hashmap
 
-let str = "{{{([[]){}}}";
-let str1 = "{[{[[]]}]}";
 
-function display(str) {
-  let map = { "}": "{", "]": "[", ")": "(" };
+let arr1=[4,4,3,3,3,3,5,6,5,5,5,5]
 
-  let stack = [];
+function display(arr) {
 
-  for (let i = 0; i < str.length; i++) {
-    let char= str[i]
-    if (["{", "[", "("].includes(char)) {
-      stack.push(char);
-    } else if (["}", "]", ")"].includes(char)) {
-      if (stack.pop() !== map[char]) return false;
-    }
-  }
-
-  return stack.length===0
 }
-console.log(display(str));
+// console.log(display(arr1));
 
 
