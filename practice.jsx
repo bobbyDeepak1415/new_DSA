@@ -20,3 +20,11 @@ function display(str) {
   return stack.length===0
 }
 console.log(display(str));
+
+
+let arr1=["jello","hello"]
+
+arr1.push("kello")
+console.log(arr1)
+arr1.pop()
+console.log(arr1)
