@@ -1,24 +1,49 @@
-// 5.pivot element
+// 5.move all zeroes to left
 
-let arr1 = [5, 6, 3, 1, 4, 10];
+// let arr1 = [5, 6, 0, 0, 4, 0];
+
+// function display(arr) {
+
+//     let k=0
+
+//     for(let i=0;i<arr.length;i++){
+
+//         if(arr[i]===0){
+//             arr1[k]=arr[i]
+//             k++
+//         }
+
+//     }
+
+//     return arr
+  
 
 
-function display(arr){
+// }
 
-    let sum=arr.reduce((a,b)=>a+b)
-
-    let leftSum=0
-    for(let i=0;i<arr.length;i++){
-        let rightSum=sum-leftSum-arr[i]
-
-        if(leftSum===rightSum) return arr[i]
-        leftSum+=arr[i]
+// console.log(display(arr1));
 
 
-    }
+/ let nums = [0, 1, 0, 3, 12];
 
-    return -1
+// function display(nums) {
 
-}
+//     let k=0
 
-console.log(display(arr1))
+//     for(let i=0;i<nums.length;i++){
+//         if(nums[i]!==0){
+//             nums[k]=nums[i]
+//             k++
+//         }
+
+//     }
+
+//     for(let i=k;i<nums.length;i++){
+//         nums[i]=0
+//     }
+
+//     return nums
+
+// }
+
+// console.log(display(nums));
