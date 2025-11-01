@@ -20,7 +20,7 @@ function display(str) {
         if(["{","[","("].includes(char)){
             cache.push(char)
         }else if(["}","]",")"].includes(char)){
-            if(cache.pop()!==map[char]) return false
+            // if(cache.pop()!==map[char]) return false
         }
 
     }
