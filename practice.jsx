@@ -1,6 +1,6 @@
 // 1.no of unique elements
 
-let arr1 = [3, 3, 3, 4, 4, 4, 5];
+let arr1 = [3, 1, 3, 3, 4, 4, 4, 5];
 
 function display(arr1) {
   let k = 1;
@@ -15,5 +15,3 @@ function display(arr1) {
   return k;
 }
 console.log(display(arr1));
-
-

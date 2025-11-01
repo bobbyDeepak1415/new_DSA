@@ -110,7 +110,7 @@
 
 // -----------------------------------------------------------------------------------
 
-// 3.Find no of unique elements in an array
+// 3.Find no of unique elements in a sorted array
 
 // let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 
