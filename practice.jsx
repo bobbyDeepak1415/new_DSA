@@ -8,7 +8,6 @@
 let str="{{{[({})]}}}"
 let str1="{{}{[({})]}}}"
 
-console.log(str)
 
 // function display(arr) {
     
@@ -27,8 +26,21 @@ console.log(str)
     if(num===0) return 0
     if(num===1) return 1
 
+    let prev=0
+    let current=1
+    let next
 
-    
+    for(let i=2;i<=num;i++){
+
+        next=prev+current
+        current=next
+        prev=current
+        
+    }
+
+    return next
+
+
 
 
  }
