@@ -4,7 +4,6 @@ let arr1 = [5, 6, 0, 0, 4, 15, 0, 9];
 
 function display(arr) {
   let k = 0;
-
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] !== 0) {
       arr[k] = arr[i];
