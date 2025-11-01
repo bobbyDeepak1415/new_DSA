@@ -15,10 +15,20 @@ function display(str) {
 
     let cache=[]
 
-    for(let i=0;i<)
+    for(let i=0;i<str.length;i++){
+        let char=str[i]
+        if(["{","[","("].includes(char)){
+            cache.push(char)
+        }else if(["}","]",")"].includes(char)){
+            if(cache.pop()!==map[char]) return false
+        }
+
+    }
+
+    return cache.length===0
 
 
 
 
 }
-// console.log(display(str));
+console.log(display(str1));
