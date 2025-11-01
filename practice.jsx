@@ -19,6 +19,21 @@ let str1="{{}{[({})]}}}"
 // 0,1,1,2,3,5,8
 // 0,1,2,3,4,5,6
 
+// prev=0
+// current=1
+// next
+
+// 1
+// next=0+1=1
+// prev=1
+// current=
+
+// 2
+// next=0+1=1
+// prev=1
+// current=
+
+
 
 
  function display(num){
@@ -33,8 +48,8 @@ let str1="{{}{[({})]}}}"
     for(let i=2;i<=num;i++){
 
         next=prev+current
-        current=next
         prev=current
+        current=next
         
     }
 
