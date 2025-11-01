@@ -111,6 +111,7 @@
 // -----------------------------------------------------------------------------------
 
 // 3.Find no of unique elements in a sorted array
+// we do this by all the unique elements forward and then count them. For this the array need to be a sorted array
 
 // let nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 
