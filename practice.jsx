@@ -1,8 +1,10 @@
-// 1.no of unique elements
+// 1.square of elements
 
-let arr1 = [3,  4, 3, 4, 4, 4, 5];
+let arr1 = [3,  4, 3, 5];
 
 function display(arr1) {
+
+    for(let i=0)
 
 
 
