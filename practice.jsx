@@ -11,9 +11,12 @@ function display(arr) {
     count[n] = (count[n] || 0) + 1;
 
     if (count[n] > maxCount) {
-      maxCount = count;
+      maxCount = count[n]
       maxNum = n;
     }
+
+
+
   }
 
   return maxNum;
