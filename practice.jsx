@@ -26,12 +26,27 @@ let str1="{{}{[({})]}}}"
 // 1
 // next=0+1=1
 // prev=1
-// current=
+// current=1
 
 // 2
-// next=0+1=1
+// next=2
 // prev=1
-// current=
+// current=2
+
+// 3
+// next=3
+// prev=2
+// current=3
+
+// 4
+// next=5
+// prev=3
+// current=5
+
+// 6
+// next=8
+// prev=5
+// current=8
 
 
 
