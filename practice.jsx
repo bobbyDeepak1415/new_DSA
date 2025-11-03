@@ -1,28 +1,22 @@
 // 8.majority element
 
-let arr1 = [1, 1, 0, 1, 9, 9, 9, 9, 9, 9, 9, 9, 9, 1, 1];
+let nums = [ 1, 1, 1, 2, 2, 3];
 
-function display(arr) {
-  let count = {};
-  let maxCount = 0;
-  let maxNum = arr[0];
+function display(nums) {
 
-  for (let n of arr) {
-    count[n] = (count[n] || 0) + 1;
+  let k=1
 
-    if (count[n] > maxCount) {
-      maxCount = count[n]
-      maxNum = n;
+  for(let i=1;i<nums.length;i++){
+    if(nums[i]!==nums[i-1]){
+      nums[k]=nums[i]
+      k++
     }
-
-
-
   }
 
-  return maxNum;
+  return nums.splice(0,k)
 
 
 
 }
 
-console.log(display(arr1));
+console.log(display(nums)); // [0, 1, 2, 3, 4]
