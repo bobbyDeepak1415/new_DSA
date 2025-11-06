@@ -1,31 +1,17 @@
 // 8.majority element
 
 
-let str="{[[{({[]})}]]}"
-let str1="{[[}{({[}]})}]]}"
+// let str="Bobby is a skilled developer"
+let str="Bobby"
 
 
 function display(str){
 
-  let map = { "}": "{", ")": "(", "]": "[" };
-  let stack=[]
+  return str.indexOf(obj)
 
-  for(let i=0;i<str.length;i++){
-    let char=str[i]
-    if(["{","[","("].includes(char)){
-stack.push(char)
-    }else if(["}","]",")"].includes(char)){
-      if(stack.pop()!==map[char]){
-        return false
-      }
-    }else{
-      return true
-    }
-  }
-
-  return stack.length===0
-
+  
+  
 
 }
 
-console.log(display(str))
+// console.log(display(str))
