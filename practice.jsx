@@ -1,18 +1,22 @@
 // 8.majority element
 
-// let str="Bobby is a skilled developer"
-let str = "sucess";
+let str = "Bobby is a Man";
 
-function display(str) {
-  let obj = {};
+function display(str, needle) {
+  for (let i = 0; i <= str.length - needle.length; i++) {
+    let found = true;
 
-  for (let i = 0; i <= str.length; i++) {
-    let char = str[i];
-    if (obj[char]) return char;
-    else {
-      obj[char] = true;
+    for (let j = 0; j <= str.length; j++) {
+      if (str[i + j] !== needle[j]) {
+        found = false;
+        break;
+      }
     }
+
+    if (found) return i;
   }
+
+  return -1;
 }
 
-console.log(display(str));
+console.log(display(str, "Man"));
