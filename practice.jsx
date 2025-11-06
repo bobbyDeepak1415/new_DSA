@@ -1,22 +1,11 @@
 // 8.majority element
 
-let str = "Bobby is a Man";
+let str = "Bobby";
 
-function display(str, needle) {
-  for (let i = 0; i <= str.length - needle.length; i++) {
-    let found = true;
+function display(str) {
 
-    for (let j = 0; j <= str.length; j++) {
-      if (str[i + j] !== needle[j]) {
-        found = false;
-        break;
-      }
-    }
-
-    if (found) return i;
-  }
-
-  return -1;
+  return str.split("").reverse().join("")
+  
 }
 
-console.log(display(str, "Man"));
+console.log(display(str));

@@ -92,7 +92,7 @@
 
 // let s = ["h", "e", "l", "l", "o"];
 
-// function display(hayStack, needle) {
+// function display(str) {
 //   return str.reverse()
 // }
 
