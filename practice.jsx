@@ -6,12 +6,13 @@ function display(str, needle) {
   for (let i = 0; i <= str.length - needle.length; i++) {
     let found = true;
 
-    for (let j = 0; j < needle.length; j++) {
+    for (let j = 0; j <= needle.length; j++) {
       if (str[i + j] !== needle[j]) {
         found = false;
         break;
       }
     }
+
     if (found) return i;
   }
 
