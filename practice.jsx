@@ -1,24 +1,20 @@
 // 8.majority element
 
 let str1="anagram"
-let str12="nagaram"
+let str2="nagaram"
 
 
-function display(arr){
+function display(str1,str2){
 
-  let obj={}
-
-  for(let i=0;i<arr.length;i++){
-    let char=arr[i]
+  return (
+    [...str1].sort((a, b) => a.localeCompare(b)).join("") ===
+    [...str2].sort((a, b) => a.localeCompare(b)).join("")
+  );
   
-    for(let j=0;j<=char.length;j++){
-
-    }
-  }
 
 }
 
-// console.log(display(arr))
+console.log(display(str1,str2))
 
 
 
