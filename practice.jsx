@@ -1,8 +1,7 @@
 // 8.majority element
 
-function counter() {
-  let count = 0;
-    return count++;
-}
+let str="a line in the passage"
 
-console.log(counter());
+let arr=str.split(" ")
+
+console.log(arr)
