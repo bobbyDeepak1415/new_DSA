@@ -1,20 +1,25 @@
 // 8.majority element
 
-let str1="anagram"
-let str2="nagaram"
+let str1 = "anagram";
+let str2 = "nagaram";
 
+function display(str1, str2) {
 
-function display(str1,str2){
+  if(str1.length!==str2.length) return false
 
-  return (
-    [...str1].sort((a, b) => a.localeCompare(b)).join("") ===
-    [...str2].sort((a, b) => a.localeCompare(b)).join("")
-  );
-  
+  let obj = {};
+
+  for (let i = 0; i < str1.length; i++) {
+    let char = str1[i];
+
+    obj[char] = (obj[char] || 0) + 1;
+  }
+
+  for(let i=0;i<str2.length;i++){
+    let char=str2[i]
+    if(obj[char])
+  }
 
 }
 
-console.log(display(str1,str2))
-
-
-
+// console.log(display(str1,str2))
