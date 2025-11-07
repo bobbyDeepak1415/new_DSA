@@ -1,22 +1,24 @@
 // 8.majority element
 
-let str = "apple is a fruit";
+let str1="anagram"
+let str12="nagaram"
 
-function display(str, needle) {
-  for (let i = 0; i <= str.length - needle.length; i++) {
-    let found = true;
 
-    for (let j = 0; j <= needle.length; j++) {
-      if (str[i + j] !== needle[j]) {
-        found = false;
-        break;
-      }
+function display(arr){
+
+  let obj={}
+
+  for(let i=0;i<arr.length;i++){
+    let char=arr[i]
+  
+    for(let j=0;j<=char.length;j++){
+
     }
-
-    if (found) return i;
   }
 
-  return -1;
 }
 
-console.log(display(str, "fruit"));
+// console.log(display(arr))
+
+
+
