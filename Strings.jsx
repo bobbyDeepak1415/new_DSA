@@ -254,10 +254,34 @@
 
 // 8.string compression
 
-let str2 = "     a good   example";
+// let str2 = "     a good   example";
+
+// function display(str) {
+//   return str.trim().split(/\s+/).join(" ");
+// }
+
+// console.log(display(str2));
+
+
+// -------------------------------------------------------------------------------------
+
+// 9.largest word
+
+ let str = "the line has the largest word in it";
+
 
 function display(str) {
-  return str.trim().split(/\s+/).join(" ");
+
+  let largestWord=0
+
+
+
+  for(let i=0;str.length;i++){
+
+  }
+
+
 }
 
-console.log(display(str2));
+console.log(display(str));
+

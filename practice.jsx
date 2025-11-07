@@ -1,26 +1,13 @@
 // 8.majority element
 
-let str1 = "aabb";
-let str2 = "aaab";
 
-function display(str1, str2) {
-  if (str1.length !== str2.length) return false;
-
-  let obj = {};
-
-  for (let i = 0; i < str1.length; i++) {
-    let char = str1[i];
-
-    obj[char] = (obj[char] || 0) + 1;
+function counter(){
+  let count=0
+  return function(){
+    return ++count
   }
-
-  for (let i = 0; i < str2.length; i++) {
-    let char = str2[i];
-    if (!obj[char]) return false;
-    obj[char]--
-  }
-
-  return true;
 }
 
-console.log(display(str1, str2));
+
+const increment=counter()
+console.log(increment())
