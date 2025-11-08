@@ -1,9 +1,4 @@
 // 8.majority element
 
-let str = "the line has the largest word in it";
-
-function display(str, needle) {
-
-
-}
+function display(str, needle) {}
 // console.log(display(str, "line"));
