@@ -28,7 +28,7 @@
 
 //   const stack=[]
 
-// 
+//
 
 //   for(let i=0;i<str.length;i++){
 //     let char=str[i]
@@ -262,33 +262,23 @@
 
 // console.log(display(str2));
 
-
 // -------------------------------------------------------------------------------------
 
 // 9.largest word
 
- let str = "the line has the largest word in it";
+// let str = "the line has the largest word in it";
 
+// function display(str) {
+//   let largestWord = "";
+//   let words = str.split(" ");
 
-function display(str) {
+//   for (let i = 0; i < words.length; i++) {
+//     if (words[i].length > largestWord.length) {
+//       largestWord = words[i];
+//     }
+//   }
 
-  let largestWord=""
-  let words=str.split(" ")
-
-  for(let i=0;i<words.length;i++){
-    if(words[i].length>largestWord){
-      largestWord=words[i]
-    }
-  }
-
-  return largestWord
-
-
-
-
-
-
-}
+//   return largestWord;
+// }
 
 // console.log(display(str));
-
