@@ -272,16 +272,23 @@
 
 function display(str) {
 
-  let largestWord=0
+  let largestWord=""
+  let words=str.split(" ")
 
-
-
-  for(let i=0;str.length;i++){
-
+  for(let i=0;i<words.length;i++){
+    if(words[i].length>largestWord){
+      largestWord=words[i]
+    }
   }
+
+  return largestWord
+
+
+
+
 
 
 }
 
-console.log(display(str));
+// console.log(display(str));
 
