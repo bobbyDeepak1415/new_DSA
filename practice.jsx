@@ -1,7 +1,7 @@
 // 8.majority element
 
-let str = "   fly me   to          the moon  ";
-let str1 = "hello             world";
+let str = "nagaram";
+let str1 = "anagram";
 function display(str) {
   return str.trim().split(/\s+/).join(" ");
 }
