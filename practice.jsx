@@ -1,22 +1,19 @@
 // 8.majority element
 
-let str = "aplp";
+let str = "the line has the largest";
 
 function display(str) {
-  let stack = (obj = {});
+  let largestWord = "";
+  let words = str.split(" ");
 
-  for (let i = 0; i <= str.length; i++) {
-    let char = str[i];
-
-    if(obj[char]) return char
-
-    obj[char] = (obj[char] || 0) + 1;
-
-
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    if (word.length > largestWord.length) {
+      largestWord = word;
+    }
   }
 
-return -1
-
+  return largestWord;
 }
 
 console.log(display(str));
