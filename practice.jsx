@@ -1,13 +1,14 @@
 // 8.majority element
 
-let str1 = "anagram";
-let str2 = "nagaram";
+let str = "   anagram    jello is    ";
 
-function display(str1, str2) {
-  return (
-    [...str1].sort((a, b) => a.localeCompare(b)).join(" ") ===
-    [...str2].sort((a, b) => a.localeCompare(b)).join(" ")
-  );
+function display(str) {
+
+
+    return str.trim().split(/\s+/).at(-1).length
+
+
+
 }
 
-console.log(display(str1, str2));
+console.log(display(str));
