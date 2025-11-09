@@ -1,6 +1,6 @@
 // 8.majority element
 
-let str1 = "nagaram";
+let str1 = "nkgaram";
 let str2 = "anagram";
 // function display(str1, str2) {
 //   return (
@@ -9,22 +9,24 @@ let str2 = "anagram";
 //   );
 // }
 
-
-
 function display(str1, str2) {
+  let obj = {};
 
-    let obj={}
-  
+  if (str1.length !== str2.length) return false;
 
-    if(str1.length!==str2.length) return false
+  for (let i = 0; i < str1.length; i++) {
+    let char = str1[i];
+    obj[char] = (obj[char] || 0) + 1;
+  }
 
-    for(let i=0;i<str1.length;i++){
-        obj[char]=(obj[char] || 0) +1
+  for (let i = 0; i < str2.length; i++) {
+    let char = str2[i];
+    if (!obj[char]) {
+      return false;
     }
+  }
 
-    for()
-
-
+  return true;
 }
 
 console.log(display(str1, str2));
