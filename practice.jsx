@@ -1,6 +1,10 @@
 // 8.majority element
 
-let str = "the line has the largest word";
+
+let str1 = "   fly me   to   the moon  ";
+let str2 = "hello world";
+
+
 
 function display(str) {
 
@@ -8,4 +12,5 @@ function display(str) {
 
 
 }
-// console.log(display(str,"line"));
+
+// console.log(display(str1));
