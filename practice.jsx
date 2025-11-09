@@ -8,9 +8,9 @@ let str2 = "hello worlds";
 
 function display(str) {
 
- let arr=str.trimEnd().split(" ")
+ return str.trim().split(" ")
 
- return arr[arr.length-1].length
+//  return arr[arr.length-1].length
 
 
 
