@@ -1,13 +1,8 @@
 // 8.majority element
 
-let str1 = "   fly me   to   the moon  ";
-let str2 = "hello worlds";
-
+let str = "     a good   example";
 function display(str) {
-
-    
-
-  
+  return str.trim().split(/\s+/).join(" ");
 }
 
-console.log(display(str1));
+console.log(display(str));
