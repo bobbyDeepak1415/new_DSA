@@ -2,15 +2,21 @@
 
 
 let str1 = "   fly me   to   the moon  ";
-let str2 = "hello world";
+let str2 = "hello worlds";
 
 
 
 function display(str) {
+
+ let arr=str.trimEnd().split(" ")
+
+ return arr[arr.length-1].length
+
+
 
 
 
 
 }
 
-// console.log(display(str1));
+console.log(display(str1));
