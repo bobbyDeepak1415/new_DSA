@@ -5,10 +5,9 @@ let str2 = "hello worlds";
 
 function display(str) {
 
+    
 
-  let arr= str.trimEnd().split(" ")
-
-   return arr.at(-1).length
+  
 }
 
 console.log(display(str1));
