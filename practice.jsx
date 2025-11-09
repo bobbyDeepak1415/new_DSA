@@ -1,7 +1,7 @@
 // 8.majority element
 
-let str1 = "nkgaram";
-let str2 = "anagram";
+let str1 = "paal";
+let str2 = "alap";
 // function display(str1, str2) {
 //   return (
 //     [...str1].sort((a, b) => a.localeCompare(b)) ===
@@ -24,6 +24,8 @@ function display(str1, str2) {
     if (!obj[char]) {
       return false;
     }
+
+    obj[char]--;
   }
 
   return true;
