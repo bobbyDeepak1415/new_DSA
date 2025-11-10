@@ -1,30 +1,30 @@
 let str = "the line has the largest";
 
-
- let word1 = "abcdef";
+let word1 = "abcdef";
 let word2 = "pqr";
 
-function display(str1,str2) {
+function display(str1, str2) {
+  let ans = "";
 
+  let m = str1.length;
+  let n = str2.length;
 
-    let m=str1.length
-    let n=str2.length
+  let i;
+  let j;
 
-    let i
-    let j
-
-    while(m<i || n<j){
-        if(m<i){
-            
-            
-        }
+  while (i < m || j< n) {
+    if (i < m) {
+      ans += str[i];
+      i++;
     }
+    if (j < n) {
+      ans += str2[j];
+      j++;
+    }
+  }
 
 
-
-
-
-
+  return ans;
 }
 
-console.log(display(word1,word2));
+console.log(display(word1, word2));
