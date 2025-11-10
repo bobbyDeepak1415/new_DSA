@@ -173,7 +173,7 @@
 
 // --------------------------------------------------------------------------------------
 
-// 6.move all zeroes in an array to left end
+// 6.move all zeroes in an array to right end
 
 // let nums = [0, 1, 0, 3, 12];
 

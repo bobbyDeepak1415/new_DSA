@@ -1,26 +1,27 @@
-let arr = [83, 4, 50, 0, 0, 2, 0];
+let arr = [83,0,0, 4, 50, 0, 0, 2, 0];
 
-function display(str1, str2) {
-  let ans = "";
+function display(arr) {
 
-  let m = str1.length;
-  let n = str2.length;
+    let k=0
 
-  let i = 0;
-  let j = 0;
+    for(let i=0;i<arr.length;i++){
+        let char=arr[i]
+        if(arr[i]!==0){
+            arr[k]=char
+            k++
+        }
 
-  while (i < m || j < n) {
-    if (i < m) {
-      ans += str1[i];
-      i++;
     }
-    if (j < n) {
-      ans += str2[j];
-      j++;
-    }
-  }
 
-  return ans;
+
+    for(let i=k;i<arr.length;i++){
+        arr[i]=0
+    }
+
+
+return arr
+
+
 }
 
-console.log(display(word1, word2));
+console.log(display(arr));
