@@ -1,17 +1,17 @@
 let arr = [83, 0, 0, 4, 50, 0, 0, 2, 0];
 
 function display(arr) {
-  let k = arr.length;
+  let k = arr.length-1;
 
-  for (let i = k; i > 0; i--) {
+  for (let i = arr.length-1; i >= 0; i--) {
     if (arr[i] !== 0) {
-      arr[i] = arr[i + k];
+      arr[k] = arr[i];
       k--;
     }
   }
 
 
-  for(let i=k;i<=0;i--){
+  for(let i=k;i>=0;i--){
     arr[i]=0
   }
 
