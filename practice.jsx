@@ -1,7 +1,4 @@
-let str = "the line has the largest";
-
-let word1 = "abcdef";
-let word2 = "pqr";
+let arr = [83, 4, 50, 0, 0, 2, 0];
 
 function display(str1, str2) {
   let ans = "";
@@ -9,12 +6,12 @@ function display(str1, str2) {
   let m = str1.length;
   let n = str2.length;
 
-  let i;
-  let j;
+  let i = 0;
+  let j = 0;
 
-  while (i < m || j< n) {
+  while (i < m || j < n) {
     if (i < m) {
-      ans += str[i];
+      ans += str1[i];
       i++;
     }
     if (j < n) {
@@ -22,7 +19,6 @@ function display(str1, str2) {
       j++;
     }
   }
-
 
   return ans;
 }
