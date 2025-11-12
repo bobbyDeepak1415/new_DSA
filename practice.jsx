@@ -6,10 +6,14 @@ let k=0
 
 for(let i=0;i<arr.length;i++){
   let char=arr[i]
-  if(ar)
+  if(char!==0){
+     arr[k]=arr[i]
+     k++
+  }
 }
 
+return arr
 
 }
 
-// console.log(display(arr));
+console.log(display(arr));
