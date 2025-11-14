@@ -14,4 +14,4 @@ function display(n) {
 
 }
 
-console.log(display(10));
+// console.log(display(10));
