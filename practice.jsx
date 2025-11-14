@@ -22,7 +22,7 @@ function display(str) {
 
   // return arr
 
-
+return str.trim().split(/\s+/).join(" ")
   
 
 }
