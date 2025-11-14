@@ -1,28 +1,30 @@
 
-function display(n) {
 
-  let arr=[]
+let str="    i am a    Man   "
+function display(str) {
 
-  for(let i=2;i<=n;i++){
-    let isPrime=true
+  // let arr=[]
 
-    for(let j=2;j<=Math.sqrt(i);j++){
-      if(i%j===0){
-        isPrime=false;
-        break
-      }
-    }
+  // for(let i=2;i<=n;i++){
+  //   let isPrime=true
 
-    if(isPrime) arr.push(i)
+  //   for(let j=2;j<=Math.sqrt(i);j++){
+  //     if(i%j===0){
+  //       isPrime=false;
+  //       break
+  //     }
+  //   }
+
+  //   if(isPrime) arr.push(i)
     
-  }
+  // }
 
 
-  return arr
+  // return arr
 
 
   
 
 }
 
-console.log(display(10));
+console.log(display(str));
