@@ -3,9 +3,20 @@ function display(n) {
 
   let arr=[]
 
-  for(let i=0;i<=n;i++){
+  for(let i=2;i<=n;i++){
+    let isPrime=true
+
+    for(let j=2;j<=Math.sqrt(i);j++){
+      if(i%j===0){
+        isPrime=false;
+        break
+      }
+    }
+
+    if(isPrime) arr.push(i)
     
   }
+
 
   return arr
 
@@ -14,4 +25,4 @@ function display(n) {
 
 }
 
-// console.log(display(10));
+console.log(display(10));
