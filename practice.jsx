@@ -1,30 +1,18 @@
 
 
-let str="    i am a    Man   "
-function display(str) {
+function display(n) {
 
-  // let arr=[]
+let arr=[]
 
-  // for(let i=2;i<=n;i++){
-  //   let isPrime=true
+for(let i=2;i<=n;i++){
+  let isPrime=true
 
-  //   for(let j=2;j<=Math.sqrt(i);j++){
-  //     if(i%j===0){
-  //       isPrime=false;
-  //       break
-  //     }
-  //   }
-
-  //   if(isPrime) arr.push(i)
-    
-  // }
-
-
-  // return arr
-
-return str.trim().split(/\s+/).join(" ")
-  
+  for(let j=2;j<)
 
 }
 
-console.log(display(str));
+
+
+}
+
+// console.log(display(15));
