@@ -3,6 +3,8 @@
 
 function display(){
 
+  console.log("jello")
+
 }
 
-// console.log(display(0))
+console.log(display())
