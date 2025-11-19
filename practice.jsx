@@ -8,4 +8,4 @@ function display(n) {
 
 }
 
-console.log(display(15));
+// console.log(display(15));
