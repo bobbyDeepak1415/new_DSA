@@ -1,24 +1,28 @@
-// let nums = [8, 45, -3, 5, -9, -2];
+let nums = [8, 45, -3, 5, -9, -2];
 
-// function display(nums) {
-//   let arr = [];
-
-
-//   for(let i=0;i<nums.length;i++){
-//     if(nums[i]<0){
-//       arr.push(nums[i])
-//     }
-//   }
-
-//   return arr.reduce((a,b))
-
-// }
-
-// console.log(display(nums));
+function display(nums) {
+  let positive=[]
+  let negative=[]
+  
 
 
-let arr=["app","pap","map","baap"]
+  for(let i=0;i<nums.length;i++){
 
-console.log(arr.sort((a,b)=>b.localeCompare(a)))
+    if(nums[i]>0){
+      positive.push(nums[i])
+    }
+    else if(nums[i]<0){
+      
+      negative.push(nums[i])
+    }
 
-// return the sum of all negative numbers,return all the negative numbers
+  }
+
+
+return [...positive,...negative]
+
+
+}
+
+console.log(display(nums));
+
