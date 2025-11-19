@@ -1,28 +1,19 @@
-let nums = [8, 45, -3, 5, -9, -2];
+// return biggest negative integer
+
+let nums = [8, 45, -3, 5, -9, -2, -33, -6, 55];
 
 function display(nums) {
-  let positive=[]
-  let negative=[]
-  
+  let negative = [];
 
-
-  for(let i=0;i<nums.length;i++){
-
-    if(nums[i]>0){
-      positive.push(nums[i])
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] < 0) {
+      negative.push(nums[i]);
     }
-    else if(nums[i]<0){
-      
-      negative.push(nums[i])
-    }
-
   }
 
+  negative.sort();
 
-return [...positive,...negative]
-
-
+  return negative[0];
 }
 
 console.log(display(nums));
-
