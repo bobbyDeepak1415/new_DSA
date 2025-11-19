@@ -3,15 +3,20 @@ let nums = [8, 45, -3, 5, -9, -2];
 function display(nums) {
   let arr = [];
 
+  let k=0
+
   for (let i = 0; i < nums.length; i++) {
 let char=nums[i]
     if(char<0){
-      arr.push(char)
+      arr[k]=arr[i]
+      k++
     }
 
   }
 
-  return arr.reduce((a,b)=>a+b)
+
+
+  return arr
 
 }
 
