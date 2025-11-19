@@ -7,7 +7,7 @@ function display(n) {
  for(let i=2;i<=n;i++){
 
   let isPrime=true
-  for(let j=2;i<j;j++){
+  for(let j=2;j<i;j++){
     if(i%j===0) {
       isPrime=false
       break
@@ -22,4 +22,4 @@ function display(n) {
 
 }
 
-// console.log(display(15));
+console.log(display(15));
