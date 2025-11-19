@@ -282,17 +282,19 @@
 
 // -----------------------------------------------------------------------------------
 
-function display() {
+// 9.print a-z
 
-    let arr=[]
+// function display() {
+//   let arr = [];
 
-    for(let i=97;i<=122;i++){
-        arr.push(String.fromCharCode(i))
-    }
+// //   for (let i = 97; i <= 122; i++) {
+//   for (let i = 65; i <= 90; i++) {
+//     arr.push(String.fromCharCode(i));
+//   }
 
-    return arr
-}
+//   return arr;
+// }
 
-console.log(display());
+// console.log(display());
 
 // -----------------------------------------------------------------------------------
