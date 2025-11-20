@@ -11,6 +11,8 @@ function display(nums) {
     if(nums[i]>0) positive.push(nums[i])
   }
 
+  positive=positive.sort((a,b)=>a-b)
+  negative=negative.sort((a,b)=>a-b)
 
   return [...positive,...negative]
 
