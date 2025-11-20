@@ -23,4 +23,12 @@ let arr=["cat","ball","zebra","eagle"]
 
 
 // console.log(nums.sort((a,b)=>a-b))
-console.log(arr.sort())
+
+
+let arr1=[]
+
+for(let i=0;i<nums.length;i++){
+  arr1.push(Math.abs(nums[i]))
+}
+
+console.log(arr1)
