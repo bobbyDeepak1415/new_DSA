@@ -1,14 +1,17 @@
 // return biggest negative integer
 
 
-let name="Bobby"
 
-let employee = {
-  name: "Bobby",
-  age: 29,
-  active: true,
-};
+function display(n){
 
-let nums=[45,33,34,35]
-console.log(nums.toLocaleString());
-console.log(name);
+  for(let i=2;i<=n;i++){
+    
+  }
+
+
+}
+
+// console.log(display(20))
+
+
+
