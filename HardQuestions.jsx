@@ -56,6 +56,8 @@
 
 // 2.remove invalid paranthesis
 
+let words = ["This", "is", "an", "example", "of", "text", "justification."];
+
 function display(words, maxWidth) {
   let i = 0;
   let lines = [];
@@ -105,3 +107,5 @@ function display(words, maxWidth) {
 
   return lines;
 }
+
+console.log(display(words, 16));
