@@ -1,6 +1,11 @@
 // return biggest negative integer
 
+let str = "appgles";
 
-let str="appgle"
+let arr1=str.split("")
 
-console.log()
+let correct=arr1.slice(3)
+
+
+console.log(arr1)
+console.log(correct)
