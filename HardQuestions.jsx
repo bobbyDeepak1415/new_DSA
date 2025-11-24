@@ -52,7 +52,9 @@
 
 // console.log(display(str));
 
+// ----------------------------------------------------------------------------
 
+// 2.remove invalid paranthesis
 
 function display(words, maxWidth) {
   let i = 0;
