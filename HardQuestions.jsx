@@ -10,6 +10,11 @@ function display(str) {
 
   let visited = new Set([str]);
 
+
+  while(queue.length>0){
+    let current=queue.shift()
+  }
+
   function isValid(str) {
     let count = 0;
 
