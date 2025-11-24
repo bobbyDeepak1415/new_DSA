@@ -16,7 +16,14 @@ function display(words, maxWidth) {
             i++
         }
 
+
+        let lineWords=words.slice(start,i)
+         lineWords.join(" ")
+         lines.push(lineWords)
+
     }
+
+    
 
   
 }
