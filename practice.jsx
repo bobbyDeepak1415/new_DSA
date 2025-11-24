@@ -18,16 +18,24 @@ function display(words, maxWidth) {
 
 
         let lineWords=words.slice(start,i)
-         lineWords.join(" ")
-         lines.push(lineWords)
+        let line= lineWords.join(" ")
+         lines.push(line)
+
+
+         if(i===words.length || lineWords.length===1){
+            let line=lineWords.join(" ")
+            
+         }
+
 
     }
 
     
 
+    return lines
   
 }
 
 
 
-// console.log(words,16)
+console.log(display(words,16))
