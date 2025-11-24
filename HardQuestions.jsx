@@ -14,7 +14,7 @@ function display(str) {
     let current = queue.shift();
 
     if (isValid(current)) {
-      result.push();
+      result.push(current);
 
       found = true;
     }
@@ -24,13 +24,13 @@ function display(str) {
     for (let i = 0; i < current.length; i++) {
       if (current[i] !== "(" && current[i] !== ")") continue;
 
+      let newStr = current.slice(0, i) + current.slice(i + 1);
 
-      
-
+      if (!visited.has(newStr)) {
+        visited.add(newStr);
+        queue.push(newStr);
+      }
     }
-
-
-
   }
 
   function isValid(str) {
@@ -46,6 +46,9 @@ function display(str) {
 
     return count === 0;
   }
+
+  return result
+
 }
 
 // console.log(display(str))
