@@ -1,41 +1,53 @@
 let words = ["This", "is", "an", "example", "of", "text", "justification."];
 
 function display(words, maxWidth) {
+  let i = 0;
+  let lines = [];
 
+  while (i < words.length) {
+    let start = i;
+    let lineLength = words[i].length;
+    i++;
 
-    let i=0
-    let lines=[]
-
-    while(i<words.length){
-        let start=i
-        let lineLength=words[i].length
-        i++
-
-        while(i<words.length && lineLength+1+words[i].length<=maxWidth){
-            lineLength+=1+words[i].length
-            i++
-        }
-
-
-        let lineWords=words.slice(start,i)
-        let line= lineWords.join(" ")
-         lines.push(line)
-
-
-         if(i===words.length || lineWords.length===1){
-            let line=lineWords.join(" ")
-            
-         }
-
-
+    while (i < words.length && lineLength + 1 + words[i].length <= maxWidth) {
+      lineLength += 1 + words[i].length;
+      i++;
     }
 
-    
+    // -----
+    let lineWords = words.slice(start, i);
 
-    return lines
-  
+    // ------
+    if (i === words.length || lineWords.length === 1) {
+      let line = lineWords.join(" ");
+      line = line + " ".repeat(maxWidth - line.length);
+      lines.push(line);
+      continue;
+    }
+
+    // ----
+
+    let gaps = lineWords.length - 1;
+    let totalSpaces = maxWidth - (lineLength - gaps);
+
+    let evenSpace = Math.floor(totalSpaces / gaps);
+    let extraSpace = totalSpaces % gaps;
+
+    // -------
+
+    let justified = "";
+
+    for (let j = 0; j < lineWords.length - 1; j++) {
+      justified += lineWords[j];
+      justified += " ".repeat(evenSpace + (j < extraSpace ? 1 : 0));
+    }
+
+    justified += lineWords[lineWords.length - 1];
+
+    lines.push(justified);
+  }
+
+  return lines;
 }
 
-
-
-console.log(display(words,16))
+// console.log(display(words,16))
