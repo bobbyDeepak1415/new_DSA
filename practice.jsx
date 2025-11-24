@@ -32,6 +32,13 @@ if(i===words.length || lineWords.length===1){
 }
 
 
+let gaps=lineWords.length-1
+
+let totalSpaces=maxWidth-(lineLength-gaps)
+let evenSpaces=Math.floor(totalSpaces/gaps)
+let extraSpaces=totalSpaces%gaps
+
+
   }
 
   return lines
