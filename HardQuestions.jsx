@@ -14,6 +14,7 @@ function display(str) {
       }
     }
 
+
     return count === 0;
   }
 

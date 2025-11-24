@@ -3,7 +3,18 @@
 let str = "()())()";
 
 function display(str) {
- return str
+
+    function isValid(str){
+        let count=0
+
+        for (let ch of str)
+
+    }
+
+
+
+
+ 
 }
 
-console.log(display(str));
+// console.log(display(str));
