@@ -1,13 +1,6 @@
 // return biggest negative integer
 
 
+let str="appgle"
 
-function display(n){
-
-
-}
-
-console.log(display(20))
-
-
-
+console.log()

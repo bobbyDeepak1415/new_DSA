@@ -10,9 +10,27 @@ function display(str) {
 
   let visited = new Set([str]);
 
+  while (queue.length > 0) {
+    let current = queue.shift();
 
-  while(queue.length>0){
-    let current=queue.shift()
+    if (isValid(current)) {
+      result.push();
+
+      found = true;
+    }
+
+    if (found) continue;
+
+    for (let i = 0; i < current.length; i++) {
+      if (current[i] !== "(" && current[i] !== ")") continue;
+
+
+      
+
+    }
+
+
+
   }
 
   function isValid(str) {
