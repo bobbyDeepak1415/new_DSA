@@ -1,7 +1,11 @@
 // return biggest negative integer
 
-const arr=[1,2,3,4,5]
+let str = "()())()";
 
-arr.shift()
 
-console.log(arr)
+function display(str){
+return str
+}
+
+
+// console.log(display(str))
