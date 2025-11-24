@@ -1,48 +1,19 @@
-// let str = ")(";
-let str = "()())()";
+let words = ["This", "is", "an", "example", "of", "text", "justification."];
 
-function display(str) {
-  function isValid(str) {
-    let count = 0;
+function display(words, maxWidth) {
+  let i = 0;
+  let lines = [];
 
-    for (let ch of str) {
-      if (ch === "(") count++;
-      else if (ch === ")") {
-        if (count === 0) return false;
-        count--;
-      }
-    }
+  while (i < words.length) {
+    let start = i;
+    let lineLength = words[i].length;
+    i++;
 
-    return count === 0;
-  }
-
-  let result = [];
-  let checked = new Set([str]);
-  let queue = [str];
-  let found = false;
-
-  while (queue.length > 0) {
-    let current = queue.shift();
-    if (isValid(current)) {
-      result.push(current);
-      found = true;
-    }
-
-    if (found) continue;
-
-    for (let i = 0; i < current.length; i++) {
-      if (current[i] !== "(" && current[i] !== ")") continue;
-
-      let newStr = current.slice(0, i) + current.slice(i + 1);
-
-      if (!checked.has(newStr)) {
-        checked.add(newStr);
-        queue.push(newStr);
-      }
+    while (i < words.length && lineLength + 1 + words[i].length <= maxWidth) {
+      lineLength += words[i].length;
+      i++;
     }
   }
-
-  return result;
 }
 
-console.log(display(str));
+// console.log(words,16)
