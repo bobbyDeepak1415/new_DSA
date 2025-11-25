@@ -1,13 +1,8 @@
-let words = ["This", "is", "an", "example", "of", "text", "justification."];
+let words = ["What", "must", "be", "acknowledgment", "shall", "be"];
+function display(words, maxWidth) {
 
+  return words
 
-function display(words) {
-
-    let lines=[]
-
-    let i=0
-
-  return result;
 }
 
-// console.log(display(words));
+console.log(display(words, 16));
