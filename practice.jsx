@@ -1,4 +1,13 @@
+let words = ["This", "is", "an", "example", "of", "text", "justification."];
 
-let str = "()())()";
 
+function display(words) {
 
+    let lines=[]
+
+    let i=0
+
+  return result;
+}
+
+// console.log(display(words));
