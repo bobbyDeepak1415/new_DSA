@@ -12,8 +12,20 @@ function display(words, maxWidth) {
 
 
     while(words.length>0 && lineLength+1+words[i].length<=maxWidth){
-      lineLength+=words[i].length
+      lineLength+=1+words[i].length
       i++
+    }
+
+    let lineWords=words.slice(start,i)
+
+    // let gaps=lineWords.length-1
+    // let totalSpaces=
+    
+    if(i===words.length || lineWords.length===1){
+
+      let line=lineWords[i]
+      line=line+" ".repeat(maxWidth-)
+    
     }
 
   }
