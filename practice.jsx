@@ -29,12 +29,30 @@ function display(words,maxWidth) {
 
     let justified=""
 
-    
+    let gaps=lineWords.length-1
+    let totalSpaces=maxWidth-(lineLength-gaps)
+    let evenSpaces=Math.floor(totalSpaces/gaps)
+    let extraSpaces=totalSpaces%gaps
+
+    for(let j=0;j<lineWords.length;j++){
+      justified+=lineWords[i]
+
+      justified+=" ".repeat(evenSpaces+(j<extraSpaces?1:0))
 
 
     }
 
+    justified+=lineWords[lineWords.length-1]
+
+
+lines.push(justified)
+
+    }
+
   }
+
+  return lines
+
    
 }
 
