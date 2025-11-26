@@ -1,4 +1,4 @@
-let str = "()()()";
+let str = "()())()";
 
 function display(str) {
   function isValid(str) {
