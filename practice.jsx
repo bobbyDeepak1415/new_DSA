@@ -27,20 +27,20 @@ function display(str) {
     let current = queue.shift();
 
     if (isValid(current)) {
-      queue.push(current);
-      found === true;
+      result.push(current);
+      found = true;
     }
 
     if (found) continue;
 
     for (let i = 0; i < current.length; i++) {
-      if (current[i] !== "(" || current[i] !== ")") continue;
+      if (current[i] !== "(" && current[i] !== ")") continue;
 
       let newStr = current.slice(0, i) + current.slice(i + 1);
 
       if (!checked.has(newStr)) {
         checked.add(newStr);
-        result.push(newStr);
+        queue.push(newStr);
       }
     }
   }
