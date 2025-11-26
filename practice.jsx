@@ -46,8 +46,8 @@ function display(str) {
     for(let i=0;i<current.length;i++){
       if(current[i]!=="(" || current[i]!==")") continue
 
-      
 
+..
     }
 
 
