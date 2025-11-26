@@ -275,16 +275,3 @@
 
 // -------------------------------------------------------------------------------------
 
-
-let str = "()())()";
-
-
-  let checked = new Set([str]);
-
-
-//   if (!checked.has(newStr)) {
-//         checked.add(newStr);
-//   }
-
-  
-console.log(checked)
