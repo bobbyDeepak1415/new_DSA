@@ -1,8 +1,8 @@
 let str = "()())()";
 
 function display(str) {
-  let result = [];
+  let result = [str];
   return result;
 }
 
-// console.log(display(str));
+console.log(display(str));
