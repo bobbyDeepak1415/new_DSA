@@ -1,4 +1,8 @@
-function display() {}
+function display() {
+
+.
+
+}
 
 console.log(display());
 
