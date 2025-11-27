@@ -10,16 +10,15 @@ function display(words, maxWidth) {
     let lineLength = words[i].length;
     i++;
 
-    while (words.length > 0 && lineLength + 1 + words[i] <= maxWidth) {
+    while (i<words.length  && lineLength + 1 + words[i] <= maxWidth) {
       lineLength += 1 + words[i].length;
       i++;
     }
     let lineWords = words.slice(start, i);
 
-    if (i === words.length && lineWords.length === 1) {
+    if (i === words.length || lineWords.length === 1) {
       let line = lineWords.join(" ");
 
-      line += lineLength[i];
       line += " ".repeat(maxWidth - line.length);
       lines.push(line);
 
@@ -48,4 +47,4 @@ function display(words, maxWidth) {
   return lines;
 }
 
-console.log(display(words,16));
+console.log(display(words, 16));
