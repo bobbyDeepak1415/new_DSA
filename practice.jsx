@@ -3,11 +3,48 @@
 let words = ["This", "is", "an", "example", "of", "text", "justification."];
 
 
-function display(words) {
+function display(words,maxWidth) {
  
 
-  return words.jo
+    let lines=[]
+
+    let i=0
+
+    while(words.length>0){
+        let start=i
+        let lineLength=words[i].length
+        i++
+        
+        
+        while(words.length>0 && lineLength+1+words[i]<=maxWidth){
+            lineLength+=1+words[i].length
+            i++
+            
+        }
+        let lineWords=words.slice(start,i)
+
+        if(i===words.length && lineWords.length===1){
+
+            
+            let line=lineWords.join()
+
+            line+=lineLength[i]
+            line+=" ".repeat(maxWidth-line.length)
+            lines.push(line)
+
+
+        }
+
+        let justified=""
+
+        let gaps
+
+
+
+    }
+
+  
 
 }
 
-console.log(display(words));
+// console.log(display(words,16));
