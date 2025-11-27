@@ -26,20 +26,30 @@ function display(words,maxWidth) {
         if(i===words.length && lineWords.length===1){
 
             
-            let line=lineWords.join()
+            let line=lineWords.join(" ")
 
             line+=lineLength[i]
             line+=" ".repeat(maxWidth-line.length)
             lines.push(line)
+
+            continue
 
 
         }
 
         let justified=""
 
-        let gaps
+        let gaps=lineWords.length-1
 
+        let totalSpaces=maxWidth-(lineWords.length-1)
 
+let evenSpaces=Math.floor(totalSpaces/gaps)
+
+let extraSpaces=totalSpaces%gaps
+
+  for(let j=0;j<lineWords[i]-1;j++){
+    
+  }
 
     }
 
