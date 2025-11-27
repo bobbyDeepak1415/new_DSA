@@ -42,10 +42,10 @@ function display(words, maxWidth) {
     }
 
     justified += lineWords[lineWords.length - 1];
-    result.push(justified);
+    lines.push(justified);
   }
 
-  return result;
+  return lines;
 }
 
-// console.log(display(words,16));
+console.log(display(words,16));
