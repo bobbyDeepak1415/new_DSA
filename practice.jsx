@@ -5,7 +5,7 @@ function display(words, maxWidth) {
 
   let i = 0;
 
-  while (words.length > 0) {
+  while (i<words.length) {
     let start = i;
     let lineLength = words[i].length;
     i++;
@@ -17,9 +17,9 @@ function display(words, maxWidth) {
     let lineWords = words.slice(start, i);
 
     if (i === words.length || lineWords.length === 1) {
-      let line = lineWords.join(" ");
+      let line = lineWords.join("");
 
-      line += " ".repeat(maxWidth - line.length);
+      line = line+" ".repeat(maxWidth - line.length);
       lines.push(line);
 
       continue;
@@ -29,7 +29,7 @@ function display(words, maxWidth) {
 
     let gaps = lineWords.length - 1;
 
-    let totalSpaces = maxWidth - (lineWords.length - 1);
+    let totalSpaces = maxWidth - (lineLength - gaps);
 
     let evenSpaces = Math.floor(totalSpaces / gaps);
 
