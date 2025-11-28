@@ -6,11 +6,11 @@
 function display(arr) {
 let result=[]
 
-for(let i of arr){
-    if(Array.isArray(i)){
-        result.push([...i.flatten()])
+for(let item of arr){
+    if(Array.isArray(item)){
+        result.push(...display(item))
     }else {
-        result.push(i)
+        result.push(item)
     }
 }
 
@@ -20,4 +20,4 @@ for(let i of arr){
 
 }
 
-// console.log(display(arr));
+console.log(display(arr));
