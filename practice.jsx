@@ -12,10 +12,13 @@ function display(words, maxWidth) {
     i++;
 
     while (i < words.length && lineLength + 1 + words[i].length <= maxWidth) {
-      lineLength += words[i].length;
+      lineLength += 1 + words[i].length;
+
+      i++;
+
+    }
 
       let lineWords = words.slice(start, i);
-      i++;
 
       if (i === words.length || lineWords.length === 1) {
         let line = lineWords.join(" ");
@@ -33,7 +36,7 @@ function display(words, maxWidth) {
       let evenSpaces = Math.floor(totalSpaces / gaps);
       let extraSpaces = totalSpaces % gaps;
 
-      for (let j = 0; j < lineWords.length-1; j++) {
+      for (let j = 0; j < lineWords.length - 1; j++) {
         justified += lineWords[j];
         justified += " ".repeat(evenSpaces + (j < extraSpaces ? 1 : 0));
         j++;
@@ -43,9 +46,9 @@ function display(words, maxWidth) {
 
       lines.push(justified);
     }
-  }
+  
 
   return lines;
 }
 
-console.log(display(words,16));
+console.log(display(words, 16));
