@@ -6,6 +6,8 @@
 function display(arr) {
 
 
+    return arr
+
 }
 
 console.log(display(arr));
