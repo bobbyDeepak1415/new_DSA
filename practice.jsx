@@ -20,13 +20,32 @@ function display(words, maxWidth) {
       if (i === words.length || lineWords.length === 1) {
         let line = lineWords.join(" ");
         line = line + " ".repeat(maxWidth - line.length);
-        
+        lines.push();
 
-
-
+        continue;
       }
+
+      let justified = "";
+
+      let gaps = lineWords.length - 1;
+
+      let totalSpaces = maxWidth - (lineLength - gaps);
+      let evenSpaces = Math.floor(totalSpaces / gaps);
+      let extraSpaces = totalSpaces % gaps;
+
+      for (let j = 0; j < lineWords.length-1; j++) {
+        justified += lineWords[j];
+        justified += " ".repeat(evenSpaces + (j < extraSpaces ? 1 : 0));
+        j++;
+      }
+
+      justified += lineWords[lineWords.length - 1];
+
+      lines.push(justified);
     }
   }
+
+  return lines;
 }
 
-// console.log(display(words,16));
+console.log(display(words,16));
