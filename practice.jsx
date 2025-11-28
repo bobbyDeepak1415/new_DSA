@@ -1,8 +1,13 @@
 
-function display() {
+
+let words = ["This", "is", "an", "example", "of", "text", "justification."];
+
+
+function display(words,maxWidth) {
   
+    
 
 
 }
 
-// console.log(display());
+// console.log(display(words,16));

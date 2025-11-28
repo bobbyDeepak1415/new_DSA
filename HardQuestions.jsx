@@ -109,3 +109,21 @@
 // }
 
 // console.log(display(words, 16));
+
+
+// ----------------------------------------------------------------------------------
+// 1.flatten an array 
+
+// function flatten(arr) {
+//   let result = [];
+
+//   for (let item of arr) {
+//     if (Array.isArray(item)) {
+//       result.push(...flatten(item)); // recursively flatten sub-array
+//     } else {
+//       result.push(item); // push normal element
+//     }
+//   }
+
+//   return result;
+// }
