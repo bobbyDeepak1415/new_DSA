@@ -1,17 +1,19 @@
-let arr = [3, [45, 9, [3, 4], [2, [67, [34]]]]];
+let str = "AAABBCCCCCCCDDEEE";
 
-function display(arr) {
-  let result = [];
-
-  for (let i of arr) {
-    if (Array.isArray(i)) {
-      result.push(...display(i));
-    } else {
-      result.push(i);
+function display(str) {
+  let result;
+  let count = 1;
+  for (let i = 0; i <= str.length; i++) {
+    if (str[i] === str[i - 1]) {
+      result += str[i] + count;
+      count++;
+    } else if (str[i] !== str[i - 1]) {
+      str += str[i];
+      count = 1;
     }
   }
 
-  return result;
+  // return result;
 }
 
-console.log(display(arr));
+console.log(display(str));
