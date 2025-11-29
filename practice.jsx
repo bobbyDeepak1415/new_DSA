@@ -21,9 +21,8 @@ function display(arr) {
 
   
 
-  return result
 
   
 }
 
-console.log(display(str));
+// console.log(display(str));
