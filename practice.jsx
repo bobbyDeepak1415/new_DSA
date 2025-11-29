@@ -17,7 +17,7 @@ function display(arr) {
     }
   }
 
-  result+=
+  result+=str[str.length-1]+count
 
   
 
