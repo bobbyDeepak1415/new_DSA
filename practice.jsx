@@ -1,12 +1,9 @@
 // let words = ["This", "is", "an", "example", "of", "text", "justification."];
 
-let arr = [1, [2, [[3], 66], 4]];
+let str = "AAABBCCCCCDD";
 
 function display(arr) {
-
-// .
-
+  // .
 }
- 
 
-console.log(display(arr));
+console.log(display(str));
