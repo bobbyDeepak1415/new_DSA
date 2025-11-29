@@ -6,9 +6,20 @@ function display(arr) {
 
   let result=[]
 
+  let obj={}
+  let done =new str([])
+
   for(let i=0;i<str.length;i++){
+    let char=str[i]
     let count=0
-    if()
+    if(obj[char]){
+      count++
+
+    }else if(!obj[char]){
+      count=0
+      result
+      
+    }
   }
 
   return result.join(" ")
