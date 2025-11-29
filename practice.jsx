@@ -1,23 +1,17 @@
-// let words = ["This", "is", "an", "example", "of", "text", "justification."];
+let arr = [3, [45, 9, [3, 4], [2, [67, [34]]]]];
 
-let str = "AAABBCCCCCDD";
+function display(arr) {
+  let result = [];
 
-function display(str) {
-  let result = "";
-
-  let count = 1;
-
-  for (let i = 0; i <= str.length; i++) {
-    let char = str[i];
-    if (char === str[i - 1]) {
-      count++;
+  for (let i of arr) {
+    if (Array.isArray(i)) {
+      result.push(...display(i));
     } else {
-      result += char + count;
-      count = 1;
+      result.push(i);
     }
   }
 
   return result;
 }
 
-console.log(display(str));
+console.log(display(arr));
