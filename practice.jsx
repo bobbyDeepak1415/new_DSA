@@ -1,17 +1,7 @@
+let str = "a      man  and     dog and one single   cat";
 
-let str=""
-
-function display() {
-
-
-  let result=[]
-
-  for(let i=65;i<91;i++){
-    result.push(String.fromCharCode(i))
-  }
-
-
-  return result;
+function display(str) {
+  return str.trim().split(/\s+/)
 }
 
-console.log(display());
+console.log(display(str));
