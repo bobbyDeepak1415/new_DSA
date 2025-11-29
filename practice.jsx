@@ -1,4 +1,4 @@
-let arr = [[3, 4], 90, [45, 67, [56, 33, 2, [40, 90], 89]]];
+let str="AABBBBBCCDDDDDDDDDD"
 
 function display(arr) {
   let result = [];
@@ -14,4 +14,4 @@ function display(arr) {
   return result;
 }
 
-console.log(display(arr));
+console.log(display(str));
