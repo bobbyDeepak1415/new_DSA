@@ -1,22 +1,18 @@
-let str = "AAAABBCCCCDD";
+let arr = [[[45, 6], 6, [3, 4, [5, [6, 8]]]]];
 
-function display(str) {
- 
+function display(arr) {
+  let result = []
 
-  let result=""
-  let count=1
-
-  for(let i=1;i<=str.length;i++){
-    if(str[i]===str[i-1]){
-      count++
-    }else {
-      result+=str[i-1]+count
-      count=1
+  for(let i of arr){
+    if(Array.isArray(i)){
+      result.push(...display(i))
+    }else{
+      result.push(i)
     }
   }
 
-  return result
 
+  return result;
 }
 
-console.log(display(str));
+console.log(display(arr));
