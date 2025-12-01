@@ -10,13 +10,13 @@ function display(str) {
     if(str[i]===str[i-1]){
       count++
     }else if (str[i] !== str[i - 1]) {
-      result+=result+str[i]
+      result+=str[i]
       count=1
-    }
+    }.
   }
 
   return result
 
 }
 
-// console.log(display(str));
+console.log(display(str));
