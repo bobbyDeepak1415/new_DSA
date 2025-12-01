@@ -17,4 +17,4 @@ result=arr[i]
   return result;
 }
 
-// console.log(display(str));
+console.log(display(str));
