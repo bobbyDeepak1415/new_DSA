@@ -1,6 +1,6 @@
 // Basics questions
 
-// 1.count odd nums
+// 1.count odd nums(1523)
 
 // function display(high, low) {
 //   let nums = 0;
@@ -16,7 +16,7 @@
 
 // -------------------------------------------------------------------------------
 
-// 2.(FizzBuzz) Given an integer n, return a string array answer (1-indexed)
+// 2.(FizzBuzz) Given an integer n, return a string array answer (1-indexed)(412)
 
 // function display(n) {
 //   let arr = [];
@@ -40,7 +40,7 @@
 
 // --------------------------------------------------------------------------------------
 
-// 3.(Power of Two) Given an integer n, return true if it is a power of two. Otherwise, return false.
+// 3.(Power of Two) Given an integer n, return true if it is a power of two. Otherwise, return false.(231)
 
 // function display(n) {
 
@@ -52,7 +52,7 @@
 
 // --------------------------------------------------------------------------------------
 
-// 4.SqrRt
+// 4.SqrRt(69)
 
 // function display(num) {
 
@@ -66,7 +66,7 @@
 
 // Array questions
 
-// 1.Two sum
+// 1.Two sum(1)
 
 // const nums = [2, 7, 11, 15];
 
@@ -84,7 +84,7 @@
 
 // -------------------------------------------------------------------------------------
 
-// 2.Majority Element(Given an array nums of size n, return the majority element
+// 2.Majority Element(Given an array nums of size n, return the majority element(169)
 
 // const nums = [2, 2, 2, 1, 1, 1, 2, 5, 5, 5, 5, 5, 5];
 
@@ -149,7 +149,7 @@
 
 // ---------------------------------------------------------------------------------
 
-// 5.Find Pivot Index(sum of numbers left of index should be equal to sum on the right)
+// 5.Find Pivot Index(sum of numbers left of index should be equal to sum on the right)(724)
 
 // let nums = [1, 7, 3, 6, 5, 6];
 
@@ -173,7 +173,7 @@
 
 // --------------------------------------------------------------------------------------
 
-// 6.move all zeroes in an array to right end
+// 6.move all zeroes in an array to right end(283)
 
 // let nums = [0, 1, 0, 3, 12];
 
