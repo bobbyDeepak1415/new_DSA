@@ -11,10 +11,13 @@ function display(candidates, target) {
 
     for(let i=start;i<candidates.length;i++){
       current.push(candidates[i])
-      backTrack(i,current,remaining)
+      backTrack(i,current,remaining-candidates[i])
+      current.pop()
     }
 
   }
+  backTrack(0,[],target)
+  return result
 }
 
-// console.log(display([2,3,6,7], 7));
+console.log(display([2,3,6,7], 7));
