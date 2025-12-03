@@ -1,4 +1,3 @@
-
 function display(candidates, target) {
   let result = [];
 
