@@ -1,7 +1,5 @@
 let str = "PPPGGJJKGGKKPJ";
 
-output = "P4G4J3 etc";
-
 function display(str) {
   let result = "";
 
@@ -15,7 +13,7 @@ function display(str) {
 
   for (let i of str) {
     if (!seen.has(i)) {
-      result += i + seen[i];
+      result += i + obj[i];
       seen.add(i);
     }
   }
