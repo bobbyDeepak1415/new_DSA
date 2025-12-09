@@ -13,7 +13,7 @@ function display(str) {
       result += str[i - 1] + count;
       count = 1;
     }
-  }
+  }.
 
   return result;
 }
