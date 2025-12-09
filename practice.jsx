@@ -1,19 +1,11 @@
-let str = "PPPGGJJKKKKKK";
+let str = "PPPGGJJKGGKKPJ";
+
+output = "P4G4J3 etc";
 
 function display(str) {
   let result = "";
 
-  let count=0
-
-  for(let i=1;i<=str.length;i++){
-    if(str[i]===str[i-1]){
-      count++
-    }
-    if(str[i]!==str[i-1]){
-      result+=str[i-1]+count
-      count=1
-    }
-  }
+  let count = 0;
 
   return result;
 }
