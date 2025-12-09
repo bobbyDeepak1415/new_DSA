@@ -1,8 +1,10 @@
+
+let str="PPPGGJJKKKKKK"
+
 function display() {
   let result = [];
 
-  return result
-
+  return result;
 }
 
-// console.log(display());
+// console.log(display(str));
