@@ -5,16 +5,16 @@ function display(str) {
 
   let obj = {};
 
-  for (let i = 0; i < str.length; i++) {
-    obj[str[i]] = (obj[str[i]] || 0) + 1;
+  for (let i of str) {
+    obj[i] = (obj[i] || 0) + 1;
   }
 
   let seen = new Set();
 
-  for (let i = 0; i < str.length; i++) {
-    if (!seen.has(str[i])) {
-      result += str[i] + obj[str[i]];
-      seen.add(str[i]);
+  for (let i of str) {
+    if (!seen.has(i)) {
+      result += i + obj[i];
+      seen.add(i);
     }
   }
 
