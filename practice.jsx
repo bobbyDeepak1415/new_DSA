@@ -12,9 +12,9 @@ function display(str) {
   let seen = new Set();
 
   for (let i = 0; i < str.length; i++) {
-    if (!seen.has(i)) {
-      result += i + obj[i];
-      seen.add(i)
+    if (!seen.has(str[i])) {
+      result += str[i] + obj[str[i]];
+      seen.add(str[i])
     }
   }
 
