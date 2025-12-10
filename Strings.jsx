@@ -283,7 +283,6 @@
 
 // console.log(display(str));
 
-
 // --------------------------------------------------------------------------
 
 // 10.count consecutive pattern
@@ -312,8 +311,7 @@
 
 // ------------------------------------------------------------------
 
-
-// 11.count non consequtive pattern
+// 11.count non consequtive pattern(you can use this for consequtive as well)
 
 // let str = "PPPGGJJKGGKKPJ";
 
@@ -338,4 +336,3 @@
 //   return result;
 // }
 // console.log(display(str));
-
