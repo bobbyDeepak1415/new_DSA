@@ -9,9 +9,18 @@ function display(str) {
     obj[i] = (obj[i] || 0) + 1;
   }
 
-  return obj
+  let seen=new Set()
 
+for(let i of str){
+  if(!seen.has(i)){
+    result+=i+obj[i]
+    seen.add(i)
 
+  }
+}
+
+  return result
 
 }
 // console.log(display(str));
+
