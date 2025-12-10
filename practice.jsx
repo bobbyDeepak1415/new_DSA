@@ -14,6 +14,7 @@ function display(str) {
   for (let i = 0; i < str.length; i++) {
     if (!seen.has(i)) {
       result += i + obj[i];
+      seen.add(i)
     }
   }
 
