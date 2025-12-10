@@ -6,14 +6,14 @@ function display(str) {
   let obj = {};
 
   for (let i = 0; i < str.length; i++) {
-    obj[i] = (obj[i] || 0) + 1;
+    obj[str[i]] = (obj[str[i]] || 0) + 1;
   }
 
   let seen = new Set();
 
   for (let i = 0; i < str.length; i++) {
     if (!seen.has(str[i])) {
-      result += str[i] + obj[i];
+      result += str[i] + obj[str[i]];
       seen.add(str[i]);
     }
   }
