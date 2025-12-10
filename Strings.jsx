@@ -285,35 +285,10 @@
 
 // --------------------------------------------------------------------------
 
-// 10.count consecutive pattern
+// 10.count consecutive pattern or  non consequtive pattern
 
 // let str = "AAABBCCCCCDD";
-
-// function display(str) {
-//   let result = "";
-
-//   let count = 1;
-
-//   for (let i = 1; i <= str.length; i++) {
-//     let char = str[i];
-//     if (char === str[i - 1]) {
-//       count++;
-//     } else {
-//       result += str[i - 1] + count;
-//       count = 1;
-//     }
-//   }
-
-//   return result;
-// }
-
-// console.log(display(str));
-
-// ------------------------------------------------------------------
-
-// 11.count non consequtive pattern(you can use this for consequtive as well)
-
-// let str = "PPPGGJJKGGKKPJ";
+// let str1 = "PPPGGJJKGGKKPJ";
 
 // function display(str) {
 //   let result = "";
@@ -336,3 +311,4 @@
 //   return result;
 // }
 // console.log(display(str));
+// console.log(display(str1));
