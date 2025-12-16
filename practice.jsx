@@ -5,16 +5,16 @@ function display(str) {
 
   let obj = {};
 
-  for (let i of str) {
-    obj[i] = (obj[i] || 0) + 1;
+  for (let i=0;i<str.length;i++ ) {
+    obj[str[i]] = (obj[str[i]] || 0) + 1;
   }
 
   let checked = new Set();
 
-  for (let i = 0; i < str.length; i++) {
-    if (!checked.has(str[i])) {
-      checked.add(str[i])
-      result += str[i] + obj[str[i]];
+  for (let i of str) {
+    if (!checked.has(i)) {
+      checked.add(i);
+      result += i + obj[i];
     }
   }
 
