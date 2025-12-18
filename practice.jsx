@@ -15,8 +15,8 @@ let months = {
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-function display(str) {
+function display(month, date) {
   return result;
 }
 
-// console.log(display(str));
+// console.log(display(Mar,12));
