@@ -13,7 +13,7 @@ let months = {
   Dec: 31,
 };
 
-
+let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(str) {
   return result;
