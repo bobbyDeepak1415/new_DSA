@@ -16,7 +16,14 @@ let months = {
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(month, date) {
-  return result;
+
+
+  let totalDays=0
+
+  for(let m in months){
+    if(m===month) break
+  }
+
 }
 
 // console.log(display(Mar,12));
