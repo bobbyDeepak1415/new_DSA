@@ -32,7 +32,12 @@ function display(month, date) {
 
   for (let m in months) {
     if (m === month) break;
+    totalDays+=months[m]
   }
+
+  totalDays+=date-1
+
+  
 }
 
 console.log(display(Mar, 12));
