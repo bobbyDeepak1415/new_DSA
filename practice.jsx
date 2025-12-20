@@ -13,6 +13,11 @@ let months = {
   Dec: 31,
 };
 
+// curDayIndex=(total+refDay)%7
+
+// total+=months[m]
+// total+=date-1
+// monthPrev=
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
@@ -37,4 +42,4 @@ function display(month, date) {
 }
 
 console.log(display("Mar", 12));
-.
+
