@@ -13,21 +13,12 @@ let months = {
   Dec: 31,
 };
 
-// jan 1=wed=3
-// refdayIndex=3
-
-// march 12th
-
-// days before march=31+28=59
-
-// total days=59+11=70
-
-// dayIndex=(totalDays+refdayIndex)%7
-// (70+3)%7=3
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(month, date) {
+
+  
   let totalDays = 0;
 
   for (let m in months) {
@@ -37,7 +28,12 @@ function display(month, date) {
 
   totalDays+=date-1
 
-  
+  const refdayIndex=3
+
+  const dayIndex=(totalDays+refdayIndex)%7
+
+  return days[dayIndex]
+
 }
 
-console.log(display(Mar, 12));
+console.log(display("Mar", 12));
