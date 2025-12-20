@@ -1,12 +1,12 @@
 let months = {
-  Jan: 30,
-  Feb: 29,
-  Mar: 30,
-  Apr: 31,
-  May: 30,
+  Jan: 31,
+  Feb: 28,
+  Mar: 31,
+  Apr: 30,
+  May: 31,
   Jun: 30,
   Jul: 31,
-  Aug: 30,
+  Aug: 31,
   Sep: 30,
   Oct: 31,
   Nov: 30,
@@ -16,15 +16,11 @@ let months = {
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(month, date) {
+  let totalDays = 0;
 
-
-  let totalDays=0
-
-  for(let m in months){
-    if(m===month) break
+  for (let m in months) {
+    if (m === month) break;
   }
-
 }
 
-console.log(display(Mar,12));
-.
+console.log(display(Mar, 12));
