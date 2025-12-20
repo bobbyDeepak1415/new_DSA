@@ -13,6 +13,18 @@ let months = {
   Dec: 31,
 };
 
+// jan 1=wed=3
+// refdayIndex=3
+
+// march 12th
+
+// days before march=31+28=59
+
+// total days=59+11=70
+
+// dayIndex=(totalDays+refdayIndex)%3
+// (70+3)%3=3
+
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(month, date) {
@@ -24,3 +36,4 @@ function display(month, date) {
 }
 
 console.log(display(Mar, 12));
+
