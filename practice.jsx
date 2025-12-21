@@ -23,11 +23,25 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(month, date) {
 
-  let dayIndex=(totalDays+refIndex)%7
+  let totalDays=0
+
+  for(let m in months){
+    if(m===month) break
+    totalDays+=months[m]
+  }
+
+  totalDays+=date-1
+  let refIndex=3
+
+
+  let dayIndex=(refIndex+totalDays)%7
+
+  return days[dayIndex]
+
 
 }
 
-// console.log(display("Mar", 12));
+console.log(display("Mar", 12));
 
 
 
