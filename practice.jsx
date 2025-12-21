@@ -19,14 +19,16 @@ let months = {
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 
-function display() {
+function display(month,date) {
+
+let ref=2
 
 
   
 
 }
 
-// console.log(display());
+// console.log(display("Nov",15));
 
 
 
