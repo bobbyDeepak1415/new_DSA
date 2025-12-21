@@ -1,3 +1,3 @@
-function display(month, date) {}
+function display() {}
 
-console.log(display("Aug", 15));
+// console.log(display());
