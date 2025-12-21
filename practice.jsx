@@ -23,6 +23,7 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(month, date) {
 
+  let dayIndex=(totalDays+refIndex)%7
 
 }
 
