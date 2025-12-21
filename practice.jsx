@@ -21,14 +21,26 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(month,date) {
 
-let ref=2
+let refDayIndex=2
 
+let totalDays=0
+
+for(let m in months){
+    if(m===month) break
+    totalDays+=months[m]
+}
+
+totalDays+=date-1
+
+dayIndex=(refDayIndex+totalDays)%7
+
+return days[dayIndex]
 
   
 
 }
 
-// console.log(display("Nov",15));
+console.log(display("Nov",15));
 
 
 
