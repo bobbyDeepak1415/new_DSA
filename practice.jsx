@@ -21,7 +21,7 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(month,date) {
 
-let refDayIndex=2
+let refDayIndex=4
 
 let totalDays=0
 
