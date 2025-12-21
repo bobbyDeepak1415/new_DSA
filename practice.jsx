@@ -25,6 +25,16 @@ function display(month, date) {
 
 let referDayIndex=3
 
+let totaldays=0
+
+for(let m of months){
+  if(m===month) break
+  totaldays+=months[m]
+}
+
+totaldays+=data-1
+
+const dayIndex=
 
 
   
@@ -35,4 +45,5 @@ let referDayIndex=3
 
 
 
-// dayIndex=(Total+referDayIndex)%7
+
+
