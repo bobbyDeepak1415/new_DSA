@@ -17,14 +17,16 @@ let months = {
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-// totalDays
+// totalDays=all the months days before +the days before ref in this month
 
 function display(month,date) {
 
 
     let totalDays=0
 
-    for()
+    for(let m in months){
+        
+    }
 
 
     let startRef=6
