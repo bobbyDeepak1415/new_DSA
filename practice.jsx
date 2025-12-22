@@ -1,4 +1,7 @@
-function display() {}
+let str = "[[[({{}{)]]]";
+function display() {
 
-// console.log(display());
-.
+
+}
+
+// console.log(display(str));
