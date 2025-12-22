@@ -1,25 +1,26 @@
-let str = "[[[({{}{)]]]";
 
-let str1 = "[[[[]]{]]";
 
-function display(str) {
-  let map = { "}": "{", "]": "[", ")": "(" };
+let months = {
+  Jan: 31,
+  Feb: 28,
+  Mar: 31,
+  Apr: 30,
+  May: 31,
+  Jun: 30,
+  Jul: 31,
+  Aug: 31,
+  Sep: 30,
+  Oct: 31,
+  Nov: 30,
+  Dec: 31,
+};
 
-  let stack = [];
+let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-  for (let i = 0; i <= str.length; i++) {
-    let char = str[i];
 
-    if (["(", "{", "["].includes(char)) {
-      stack.push(char);
-    } else if ([")", "}", "]"].includes(char)) {
-      if (stack.pop() !== map[char]) {
-        return false;
-      }
-    }
-  }
-
+function display(month,date) {
+  
   return stack.length === 0;
 }
 
-console.log(display(str1));
+// console.log(display());
