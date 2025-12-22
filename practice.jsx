@@ -29,6 +29,8 @@ function display(month,date) {
         totalDays+=months[m]
     }
 
+    totalDays+=date-1
+
 
     let startRef=6
   
@@ -37,4 +39,4 @@ function display(month,date) {
   return days[dayIndex];
 }
 
-// console.log(display());
+console.log(display("Sep",28));
