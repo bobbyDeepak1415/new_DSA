@@ -25,7 +25,8 @@ function display(month,date) {
     let totalDays=0
 
     for(let m in months){
-        
+        if(m===month) break
+        totalDays+=months[m]
     }
 
 
