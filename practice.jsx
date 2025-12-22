@@ -17,10 +17,21 @@ let months = {
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
+// totalDays
 
 function display(month,date) {
+
+
+    let totalDays=0
+
+    for()
+
+
+    let startRef=6
   
-  return stack.length === 0;
+    let dayIndex=(startRef+totalDays)%7
+
+  return days[dayIndex];
 }
 
 // console.log(display());
