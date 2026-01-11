@@ -1,9 +1,17 @@
-let store = { "}": "{", "}": "{", "}": "{" };
+let store = { "}": "{", "]": "[", ")": "(" };
 
-let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+let str = "([[{{}]}]])";
 
-function display(month, date) {
-  
+function display(str) {
+
+    let cache={}
+
+    for(let i of str){
+        if()
+    }
+
+
+
 }
 
-console.log(display());
+// console.log(display(str));
