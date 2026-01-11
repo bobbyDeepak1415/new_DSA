@@ -1,3 +1,9 @@
-function display(month, date) {}
+// function display(month, date) {}
 
-// console.log(display("Sep", 28));
+let str = "Hello Bobby Deepak";
+
+function display(str) {
+  return str.trim().split(" ").at(-1);
+}
+
+console.log(display(str));
