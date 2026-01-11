@@ -1,9 +1,20 @@
-// function display(month, date) {}
+let months = {
+    Jan: 31,
+    Feb: 28,
+    Mar: 31,
+    Apr: 30,
+    May: 31,
+    Jun: 30,
+    Jul: 31,
+    Aug: 31,
+    Sep: 30,
+    Oct: 31,
+    Nov: 30,
+    Dec: 31,
+};
 
-let str = "Hello Bobby Deepak";
+let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-function display(str) {
-  return str.trim().split(" ").at(-1);
-}
+function display(month, date) {}
 
-console.log(display(str));
+// console.log(display(Jan,12));
