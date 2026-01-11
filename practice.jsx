@@ -17,9 +17,14 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 function display(month, date) {
 
+let refIndex=2
 
+for(let m in months){
+    if(m===month)break
+    
+}
 
 
 }
 
-console.log(display("Aug",15));
+// console.log(display("Nov",15));
