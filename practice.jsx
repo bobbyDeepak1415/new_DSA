@@ -1,7 +1,7 @@
 
 
 
-let str = "AAABBCCCCCDDBB";
+let str = "AAABBCCCCCDDBBBBB";
 let str1 = "PPPGGJJKGGKKPJ";
 
 
@@ -32,4 +32,4 @@ function display(str) {
 
 }
 
-// console.log(display(str));
+console.log(display(str));
