@@ -1,6 +1,6 @@
 let months = {
   Jan: 31,
-  Feb: 28,
+  Feb: 29,
   Mar: 31,
   Apr: 30,
   May: 31,
