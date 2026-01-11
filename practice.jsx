@@ -15,6 +15,11 @@ let months = {
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-function display(month, date) {}
+function display(month, date) {
 
-// console.log(display(Jan,12));
+
+
+
+}
+
+console.log(display("Aug",15));
