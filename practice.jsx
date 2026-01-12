@@ -1,35 +1,3 @@
-let months = {
-  Jan: 31,
-  Feb: 28,
-  Mar: 31,
-  Apr: 30,
-  May: 31,
-  Jun: 30,
-  Jul: 31,
-  Aug: 31,
-  Sep: 30,
-  Oct: 31,
-  Nov: 30,
-  Dec: 31,
-};
+function display() {}
 
-let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
-
-function display(month, date) {
-  let refIndex = 4;
-
-  let totalDays = 0;
-
-  for (let m in months) {
-    if (m === month) break;
-    totalDays += months[m];
-  }
-
-  totalDays += date - 1;
-
-  let dayIndex = (totalDays + refIndex) % 7;
-
-  return days[dayIndex];
-}
-
-console.log(display("Aug", 15));
+// console.log(display());
