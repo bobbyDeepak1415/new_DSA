@@ -20,7 +20,20 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
 
 
-function display() {
+function display(month,date) {
+
+    let refIndex=4
+
+    let totalDays=0
+
+    for(let m in months){
+        if(m===month) break
+        totalDays+=months[m]
+        
+
+    }
+
+    
 
 
 
