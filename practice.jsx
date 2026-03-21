@@ -8,8 +8,12 @@ function display(str) {
 
     for(let i=0;i<str.length;i++){
         let item=str[i]
-if(checked[])
+checked[item]=(checked[item]||0)+1
+result+=item+checked[item]
     }
+
+    return result
+
 }
 
-// console.log(display(str));
+console.log(display(str));
