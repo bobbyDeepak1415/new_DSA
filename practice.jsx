@@ -2,7 +2,7 @@ let str = "AABBBCDDDEEEEE";
 function display(str) {
   let obj = {};
 
-  let result = 0;
+  let result = "";
 
   for (let i of str) {
     obj[i] = (obj[i] || 0) + 1;
