@@ -2,17 +2,26 @@
 let str="AABBBCDDDEEEEE"
 function display(str) {
     
-    let result=0
+    let obj={}
 
-    const checked=new Set()
-
-    for(let i=0;i<str.length;i++){
-        let item=str[i]
-checked[item]=(checked[item]||0)+1
-result+=item+checked[item]
+    for(let i of str){
+        obj[i]=(obj[i] || 0)+1
+        
+        
     }
 
-    return result
+    let checked=new Set()
+
+    for(let i of str){
+
+        if(!checked.has(i)){
+            result+=i+obj[i]
+            checked.add(i)
+        }
+        }
+    
+
+    // return result
 
 }
 
