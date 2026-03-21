@@ -4,8 +4,12 @@ let arr = [
   ["B", 4],
   ["E", 1],
 ];
-function display(str) {
+function display(arr) {
   
+    let sortedArr=arr.map((item)=>item[0])
+
+    return sortedArr.sort((a,b)=>a.localeCompare(b))
+
 }
 
-// console.log(display(arr));
+console.log(display(arr));
