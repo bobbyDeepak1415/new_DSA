@@ -1,16 +1,11 @@
-let arr1 = [3, 4, [4, [90, 89], [7, 9], 54, 78]];
+let arr = [
+  [1, 2, 3],
+  [1, 1, 2, 3],
+  [1, 2, 2, 3, 3, 3],
+];
 
-const display = (arr) => {
-  let result = [];
+function display(arr) {}
 
-  for (let i of arr) {
-    if (Array.isArray(i)) {
-      result.push(...display(i));
-    } else {
-      result.push(i);
-    }
-  }
+console.log(display(arr));
 
-  return result;
-};
-console.log(display(arr1));
+// ans:[0,1,2]
