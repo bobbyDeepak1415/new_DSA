@@ -1,18 +1,9 @@
-let arr1 = [3, 4, [4, [90, 89], [7, 9], 54, 78]];
+// let arr1 = [3, 4, [4, [90, 89], [7, 9], 54, 78]];
+let arr = [1, 2, 3, 4, 5];
 
-const display = (arr) => {
-  let result = [];
+const display = (arr) => {};
+// console.log(display(arr1));
 
-  for (let i of arr) {
-    if (Array.isArray(i)) {
-      result.push(...display(i));
-    } else {
-      result.push(i);
-    }
-  }
+let arr2 = [];
 
-  return result;
-};
-
-console.log(display(arr1));
-...
+console.log([...arr]);
