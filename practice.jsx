@@ -15,3 +15,4 @@ const display = (arr) => {
 };
 
 console.log(display(arr1));
+...
