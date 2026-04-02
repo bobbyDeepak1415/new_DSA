@@ -10,18 +10,6 @@ function display(arr) {
   let obj = {};
   let count = 0;
 
-  for (let i of arr) {
-    for (let j = 0; j < i.length; j++) {
-      obj[j] = (obj[j] || 0) + 1;
-
-      if (obj[j] > 1) {
-        count++;
-        result.push(count);
-      }
-    }
-    count = 0;
-  }
-
   return result;
 }
 
