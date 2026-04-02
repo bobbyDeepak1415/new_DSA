@@ -1,3 +1,2 @@
-function display() {}
+let str = "the line has the largest word in it";
 
-// console.log(display());
