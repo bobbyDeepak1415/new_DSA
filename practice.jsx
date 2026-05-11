@@ -31,25 +31,3 @@
 
 // ans:[0,1,2]
 
-let str1 = "(((}}}((]]]]";
-let str2 = "(([[]([]]])]))[[";
-
-function display(str) {
-  let result = [];
-
-  for (let i of str) {
-    if(["]","}",")"].includes(i)){
-      result.push(i);
-    }
-  }
-  
-  for(let i of str){
-    if (["(", "{", "["].includes(i)) {
-      result.pop(i)
-    }
-  }
-
-  return result.length===0
-}
-
-console.log(display(str2))
