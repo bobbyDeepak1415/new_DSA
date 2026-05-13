@@ -24,10 +24,11 @@ function display() {
       seen.add(j);
     }
 
-    result.push()
+    result.push(`${i}-${seen.size}`)
   }
 
   return result;
 }
 
 console.log(display(str))
+
