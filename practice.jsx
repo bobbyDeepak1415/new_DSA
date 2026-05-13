@@ -1,33 +1,42 @@
-// let arr = [
-//   [1,1, 2,2,2,3,3, 3],
-//   [1, 1, 2, 3],
-//   [1, 2, 2, 3, 3, 3],
-// ];
+// i/p: [{fruits: "mango", vegetable: "radish"},
+// {fruits: "apple", vegetable: "tomato"},
+// {fruits: "kiwi", vegetable: "potato"},]
 
-// function display(arr) {
-//   let result = [];
+// o/p: [{fruits: ["mango", "apple", "kiwi"],
+// vegetable: ["radish", "tomato", "potato"]}]
 
-//   for (let i of arr) {
-//     let obj = {};
+// function display(arr){
 
-//     let count = 0;
+//     let o/p=[{fruits,vegetables}]
 
-//     for (let val of i) {
-//       obj[val] = (obj[val] || 0) + 1;
-//     }
+//     for(let i=)
 
-//     for (let key in obj) {
-//       if (obj[key] > 1) {
-//         count++;
-//       }
-//     }
-//     result.push(count);
-//   }
-
-//   return result;
 // }
 
-// console.log(display(arr));
+let str = "Hello World";
 
-// ans:[0,1,2]
+function display(str) {
+  let obj = {};
 
+  let result = [];
+
+  for (let item of str) {
+    for (let j of item) {
+      obj[j] = (obj[j] || 0) + 1;
+    }
+
+    let seen = new Set();
+
+    for (let j of item) {
+      if (!seen.has(j)) {
+        seen.add(j);
+      }
+    }
+
+    if (!obj[item] > 1) {
+      result.push();
+    }
+  }
+}
+
+console.log(display(str));

@@ -312,3 +312,19 @@
 // }
 // console.log(display(str));
 // console.log(display(str1));
+
+
+// ----------------------------------------------------------------------------
+
+// 11.no of unique chars in a word in a string
+
+// input: Hello World
+
+// output:
+// Hello - 4
+// World - 5
+
+
+
+
+
