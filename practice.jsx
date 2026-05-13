@@ -12,3 +12,7 @@
 //     for(let i=)
 
 // }
+
+
+let str="Hello world from Bobby"
+
