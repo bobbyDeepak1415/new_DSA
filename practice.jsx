@@ -20,21 +20,13 @@ function display(str) {
 
   let result = [];
 
-  for (let item of str) {
-    for (let j of item) {
-      obj[j] = (obj[j] || 0) + 1;
-    }
-
+  let arr = str.split(" ");
+  for (let item of arr) {
     let seen = new Set();
-
     for (let j of item) {
       if (!seen.has(j)) {
         seen.add(j);
       }
-    }
-
-    if (!obj[item] > 1) {
-      result.push();
     }
   }
 }
