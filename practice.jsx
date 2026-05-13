@@ -13,22 +13,4 @@
 
 // }
 
-let str = "Hello world from Bobby";
-
-function display() {
-  let result = [];
-  let arr = str.split(" ");
-  for (let i of arr) {
-    let seen = new Set();
-    for (let j of i) {
-      seen.add(j);
-    }
-
-    result.push(`${i}-${seen.size}`)
-  }
-
-  return result;
-}
-
-console.log(display(str))
 
