@@ -19,6 +19,23 @@ let str="Hello World"
 
 function display(str){
 
+    let arr=str.split(" ")
+
+    let result=[]
+
+    for(let i of arr){
+        let seen=new Set()
+        for(let j of i){
+            seen.add(i)
+        }
+
+        result.push(`${i}-${seen.size}`)
+    }
+
+
+
+    // return arr
+
 }
 
 
