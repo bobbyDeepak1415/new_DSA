@@ -13,30 +13,23 @@
 
 // }
 
+let str = "Hello World form Bobby";
 
-let str="Hello World"
+function display(str) {
+  let arr = str.split(" ");
 
+  let result = [];
 
-function display(str){
-
-    let arr=str.split(" ")
-
-    let result=[]
-
-    for(let i of arr){
-        let seen=new Set()
-        for(let j of i){
-            seen.add(i)
-        }
-
-        result.push(`${i}-${seen.size}`)
+  for (let i of arr) {
+    let seen = new Set();
+    for (let j of i) {
+      seen.add(j);
     }
 
+    result.push(`${i}-${seen.size}`);
+  }
 
-
-    // return arr
-
+  return result;
 }
 
-
-// console.log(display(str))
+console.log(display(str));
