@@ -11,3 +11,13 @@ let input = [
   { fruits: "kiwi", vegetable: "potato" },
 ];
 
+
+
+function display(givenObj){
+let res={}
+
+givenObj.forEach(element => {
+  
+});
+
+}
