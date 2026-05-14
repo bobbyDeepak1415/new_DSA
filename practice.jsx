@@ -14,3 +14,12 @@
 // }
 
 
+let str="Hello World"
+
+
+function display(str){
+
+}
+
+
+// console.log(display(str))
