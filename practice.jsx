@@ -11,6 +11,37 @@ let input = [
   { fruits: "kiwi", vegetable: "potato" },
 ];
 
+// function display(givenObj) {
+//   let res = {};
 
+//   givenObj.forEach((obj) => {
+//     Object.entries(obj).forEach(([key, val]) => {
+//       if (!res[key]) {
+//         res[key] = [val];
+//       } else {
+//         res[key].push(val);
+//       }
+//     });
+//   });
 
+//   return [res];
+// }
 
+function display(givenObj) {
+  let res = {};
+
+  givenObj.forEach((obj) => {
+    Object.entries(obj).forEach(([key,val])=>{
+      if(!res[key]){
+        res[key]=val
+      }else{
+        res[key].push(val)
+      }
+    })
+   
+  });
+
+  return [res];
+}
+
+console.log(display(input));
