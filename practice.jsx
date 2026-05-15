@@ -21,4 +21,3 @@ givenObj.forEach(element => {
 });
 
 }
-...display.
