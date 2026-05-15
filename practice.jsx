@@ -1,13 +1,26 @@
-// let input = [
-//   { fruits: "mango", vegetable: "radish" },
-//   { fruits: "apple", vegetable: "tomato" },
-//   { fruits: "kiwi", vegetable: "potato" },
-// ];
+let input = [
+  { fruits: "mango", vegetable: "radish" },
+  { fruits: "apple", vegetable: "tomato" },
+  { fruits: "kiwi", vegetable: "potato" },
+];
 
 
 
-const shoppingCart = {
-  apple: 2,
-  bread: 3,
-  milk: 4,
-};
+function display(givenArr){
+  let res={}
+
+  givenArr.forEach(obj => {
+    Object.entries(obj).forEach(([key,val])=>{
+      if(res[key]){
+        res[key].push(val)
+      }else{
+res[key]=[val]
+      }
+    })
+  });
+
+  return [res]
+
+}
+
+console.log(display(input))
