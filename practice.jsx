@@ -12,12 +12,39 @@ let input = [
 ];
 
 
+// function display(givenObj) {
+//   let res = {};
 
-function display(givenObj){
-let res={}
+//   givenObj.forEach((obj) => {
+//     Object.entries(obj).forEach(([key, val]) => {
+//       if (!res[key]) {
+//         res[key] = [val];
+//       } else {
+//         res[key].push(val);
+//       }
+//     });
+//   });
 
-givenObj.forEach(element => {
-  
-});
+//   return [res];
+// }
 
-}
+
+
+// function display(givenObj){
+// let res={}
+
+// givenObj.forEach(obj => {
+//   Object.entries(obj).forEach(([key,value])=>{
+//     if(!res[key])
+//   })
+// });
+
+// return givenObj
+
+// }
+
+
+// console.log(display(input))
+
+
+Object.entries(input)
