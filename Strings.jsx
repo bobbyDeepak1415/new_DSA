@@ -313,7 +313,6 @@
 // console.log(display(str));
 // console.log(display(str1));
 
-
 // ----------------------------------------------------------------------------
 
 // 11.no of unique chars in a word in a string
@@ -343,8 +342,32 @@
 
 // console.log(display(str));
 
+// -------------------------------------------------------------------------
 
+// 12.sort an array of objects
 
-let 
+// let input = [
+//   { fruits: "mango", nuts: "almonds", vegetable: "radish" },
+//   { nuts: "brazil nuts", fruits: "apple", vegetable: "tomato" },
+//   { fruits: "kiwi", vegetable: "potato" },
+// ];
 
+// function display(givenArr) {
+//   let res = {};
 
+//   givenArr.forEach((obj) => {
+//     Object.entries(obj).forEach(([key, val]) => {
+//       if (res[key]) {
+//         res[key].push(val);
+//       } else {
+//         res[key] = [val];
+//       }
+//     });
+//   });
+
+//   return res;
+// }
+
+// console.log(display(input));
+
+// -----------------------------------------------------------------------------------------
