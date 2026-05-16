@@ -1,26 +1,22 @@
-let str = "AAABBCCDDAAA";
+let str = "[[[({)]}]]";
+
+// let str1="[[[{{}}]]]"
 
 function display(str) {
-  let result = "";
-
-  let obj = {};
+  let map = { "}": "{", "]": "[", ")": "(" };
+  let stack = [];
 
   for (let i of str) {
-    obj[i] = (obj[i] || 0) + 1;
-  }
-
-  let seen=new Set()
-
-
-  for(let i of str){
-    if(!seen.has(i)){
-        seen.add(i)
-        result+=i+obj[i]
+    if (["(", "{", "["].includes(i)) {
+      stack.push(i);
+    } else if ([")", "]", "}"].includes(i)) {
+      if (!map[i] === stack.pop()) {
+        return false;
+      }
     }
   }
 
-  return result
-
+  return stack.length === 0;
 }
 
 console.log(display(str));
