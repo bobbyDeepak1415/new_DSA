@@ -1,22 +1,24 @@
-let str = "[[[({)]}]]";
 
-// let str1="[[[{{}}]]]"
 
-function display(str) {
-  let map = { "}": "{", "]": "[", ")": "(" };
-  let stack = [];
+let input = [
+  { fruits: "mango", nuts: "almonds", vegetable: "radish" },
+  { nuts: "brazil nuts", fruits: "apple", vegetable: "tomato" },
+  { fruits: "kiwi", vegetable: "potato" },
+];
 
-  for (let i of str) {
-    if (["(", "{", "["].includes(i)) {
-      stack.push(i);
-    } else if ([")", "]", "}"].includes(i)) {
-      if (!map[i] === stack.pop()) {
-        return false;
-      }
-    }
-  }
 
-  return stack.length === 0;
+function display(givenObj) {
+
+    let res={}
+    
+
+    givenObj.forEach(obj => {
+        Object.entries(obj).forEach(([key,val])=>{
+            
+        })
+    });
+
+    
 }
 
-console.log(display(str));
+// console.log(display(input));
