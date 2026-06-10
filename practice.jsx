@@ -1,6 +1,6 @@
 
 
-const nums = [2, 7, 11, 15];
+const nums = [2, 7, 11, 15,2];
 
 function display(arr,target){
 
