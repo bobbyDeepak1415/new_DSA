@@ -6,15 +6,16 @@ function display(arr,target){
 
     let result=[]
 
-    for(let i of nums){
-        for(let j of nums){
-            if(i+j===target){
+    for(let i=0;i<arr.length;i++){
+        for(let j=i+1;j<arr.length;j++){
+            if(arr[i]+arr[j]===target){
                 result.push(i,j)
             }
         }
     }
 
+   
    return result
 }
 
-// console.log(display(nums,22))
+console.log(display(nums,9))
