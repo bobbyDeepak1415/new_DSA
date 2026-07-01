@@ -6,9 +6,9 @@ let str="[[({{})]]"
 let str3="[[{{(())}}]]"
 
 
-function display(){
+function display(str){
 
 }
 
 
-console.log()
+// console.log(display(str))
