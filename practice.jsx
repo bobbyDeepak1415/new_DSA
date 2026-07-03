@@ -11,6 +11,15 @@ function display(str) {
 
   let seen=new Set()
 
+  for(let i of str){
+    if(!seen.has(i)){
+        seen.add(i)
+        result+=i+obj[i]
+    }
+  }
+
+  return result
+
 }
 
 
