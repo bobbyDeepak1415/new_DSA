@@ -1,9 +1,15 @@
+let str = "AABBCCEDDAABB";
 
+function display(str) {
+  let result = "";
 
-let str="AABBCCEDDAABB"
+  let obj = {};
 
+  for (let i of str) {
+    obj[i] = (obj[i] || 0) + 1;
+  }
 
-function display(str){
+  let seen=new Set()
 
 }
 
