@@ -1,24 +1,19 @@
-let str = "AABBAA";
+let str = [1,2[3,4[5,6]]]
 
-function display(str) {
-  let result = "";
+function display(arr) {
 
-  let obj = {};
+    let result=[]
 
-  for (let i of str) {
-    obj[i] = (obj[i] || 0) + 1;
-  }
-
-  let seen = new Set();
-
-  for (let i of str) {
-    if (!seen.has(i)) {
-      seen.add(i);
-      result += i + obj[i];
+    for(let i of arr){
+if(!Array.isArray(i)){
+result.push(i)
+}else{
+    result.push(...display(i))
+}
     }
-  }
+  
+    return result
 
-  return result;
 }
 
-console.log(display(str));
+// console.log(display(arr));
