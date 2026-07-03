@@ -1,2 +1,3 @@
 
 
+let str="AABBCCEDDAABB"
