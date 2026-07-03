@@ -1,19 +1,17 @@
-let str = [1,2[3,4[5,6]]]
+let arr = [1, (2)[(3, (4)[(5, 6)])]];
 
 function display(arr) {
+  let result = [];
 
-    let result=[]
-
-    for(let i of arr){
-if(!Array.isArray(i)){
-result.push(i)
-}else{
-    result.push(...display(i))
-}
+  for (let i of arr) {
+    if (!Array.isArray(i)) {
+      result.push(i);
+    } else if (Array.isArray(i)) {
+      result.push(...display(i));
     }
-  
-    return result
+  }
 
+  return result;
 }
 
-// console.log(display(arr));
+console.log(display(arr));
