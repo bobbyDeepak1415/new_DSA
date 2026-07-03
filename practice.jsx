@@ -1,4 +1,4 @@
-let arr = [1, 2, [3, 4, [5, [6, 7]]]];
+let arr = [1, 2, [3, 4, [5, 6]]];
 
 function display(arr) {
   let result = [];
@@ -6,7 +6,7 @@ function display(arr) {
   for (let i of arr) {
     if (!Array.isArray(i)) {
       result.push(i);
-    } else if (Array.isArray(i)) {
+    } else {
       result.push(...display(i));
     }
   }
