@@ -10,7 +10,7 @@ function display(subs,pageNo,pageSize){
 
     let lastIndex=startIndex+pageSize
 
-    return subs.slice()
+    return subs.slice(startIndex,lastIndex)
 
 }
 
