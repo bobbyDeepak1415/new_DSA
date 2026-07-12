@@ -3,4 +3,16 @@
 const subjects = ["Maths", "English", "Telugu", "Geography", "Physics"];
 
 
+function display(subs,pageNo,pageSize){
 
+
+    let startIndex=(pageNo-1)*pageSize
+
+    let lastIndex=startIndex+pageSize
+
+    return subs.slice()
+
+}
+
+
+// console.log(display(subjects, 3, 2));
