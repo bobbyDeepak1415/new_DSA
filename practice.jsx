@@ -4,7 +4,10 @@ function display(str){
 
   let obj={}
 
-  for(let i of str)
+  for(let i of str){
+    if(obj[i]) return i
+    obj[i]=true
+  }
 
 }
 
