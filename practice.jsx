@@ -1,26 +1,17 @@
+let arr = [2, 0, 0, 8, 7, 4];
 
-let arr=[2,0,0,8,7,4]
-
-
-function display(arr){
-
-
-  let k=0
-
-  for(let i=0;i<arr.length;i++){
-    if(arr[i]!==0){
-      let temp=arr[i]
-      arr[i]=arr[k]
-      arr[k]=temp
-      k++
+function display(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - 1 - i; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
     }
   }
 
-  return arr
-
-
+  return arr;
 }
 
-
-
-console.log(display(arr))
+console.log(display(arr));
