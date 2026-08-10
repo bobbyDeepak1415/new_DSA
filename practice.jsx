@@ -1,4 +1,4 @@
-// let 
+// let temp=arr[i]=1
 // 
 // 
 // 
@@ -13,7 +13,11 @@ function display(arr){
 
   for(let i=0;i<arr.length;i++){
     if(arr[i]!==0){
-      let temp=
+      let temp=arr[i]
+      arr[i]=arr[k]
+      arr[k]=temp
+      k++
+
     }
   }
 
@@ -23,5 +27,5 @@ function display(arr){
 
 }
 
-console.log(display(nums))
+// console.log(display(nums))
 
