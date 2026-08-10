@@ -24,10 +24,17 @@ let arr = [1, 2, 2, 3, 4, 4, 5];
 function display(arr) {
   let result = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    if (!result.includes(arr[i])) {
-      result.push(arr[i]);
-    }
+  let obj={}
+
+  for(let i of arr){
+    obj[i]=(obj[i] || 0)+1
+  }
+
+  for(let i=0;i<arr.length;i++){
+  let num=arr[i]
+if(obj[num]===1){
+  result.push(num)
+}
   }
 
   return result;
