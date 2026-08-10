@@ -1,25 +1,36 @@
+// let nums = [1,0, 8, 0, 9, 11,12, 0, 13,0, 44];
 
+// function display(arr){
 
+//   let k=0
 
-let nums = [1,0, 8, 0, 9, 11,12, 0, 13,0, 44];
+//   for(let i=0;i<arr.length;i++){
+//     if(arr[i]!==0){
+//       let temp=arr[i]
+//       arr[i]=arr[k]
+//       arr[k]=temp
+//       k++
+//     }
+//   }
 
-function display(arr){
+//   return nums
 
-  let k=0
+// }
 
-  for(let i=0;i<arr.length;i++){
-    if(arr[i]!==0){
-      let temp=arr[i]
-      arr[i]=arr[k]
-      arr[k]=temp
-      k++
+// console.log(display(nums))
+
+let arr = [1, 2, 2, 3, 4, 4, 5];
+
+function display(arr) {
+  let result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!result.includes(arr[i])) {
+      result.push(arr[i]);
     }
   }
 
-  // return nums
-
+  return result;
 }
 
-console.log(display(nums))
-
-
+console.log(display(arr));
