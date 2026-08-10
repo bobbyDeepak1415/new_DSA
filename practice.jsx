@@ -15,6 +15,7 @@ function display(arr){
 
   return nums
 
+
 }
 
 console.log(display(nums))
