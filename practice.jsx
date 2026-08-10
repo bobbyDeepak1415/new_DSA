@@ -1,17 +1,25 @@
-let nums = [109,44,56,1,345, 8, 9, 11, 12, 13];
 
-function display(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length - 1 - i; j++) {
-      if (arr[j] > arr[j + 1]) {
-        let temp = arr[j + 1];
-        arr[j + 1] = arr[j];
-        arr[j] = temp;
-      }
+
+
+let nums = [1,0, 8, 0, 9, 11,12, 0, 13,0, 44];
+
+function display(arr){
+
+  let k=0
+
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]!==0){
+      let temp=arr[i]
+      arr[i]=arr[k]
+      arr[k]=temp
+      k++
     }
   }
 
-  return arr;
+  // return nums
+
 }
 
-console.log(display(nums));
+console.log(display(nums))
+
+
