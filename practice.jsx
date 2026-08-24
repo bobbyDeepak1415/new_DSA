@@ -1,28 +1,28 @@
 
-let str="AAABBCCABAACCB"
+let arr=[1,2,3,4,4,3,5]
 
 function display(str){
 
-    let result=""
-
+    let result=[]
 
     let obj={}
 
-    for(let i of str){
+    for(let i of arr){
 obj[i]=(obj[i] || 0)+1
     }
 
-    let seen=new Set()
 
-    for(let i of str){
-        if(!seen.has(i)){
-            seen.add(i)
-            result+=i+obj[i]
+
+    for(let i of arr){
+        if(obj[i]===1){
+            result.push(i)
         }
     }
 
+
     return result
 
+  
 }
 
-console.log(display(str))
+console.log(display(arr))
