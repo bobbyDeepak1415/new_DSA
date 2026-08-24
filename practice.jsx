@@ -1,5 +1,5 @@
 
-let str="AAABBCCABAA"
+let str="AAABBCCABAACCB"
 
 function display(str){
 
@@ -25,4 +25,4 @@ obj[i]=(obj[i] || 0)+1
 
 }
 
-// console.log(display(str))
+console.log(display(str))
