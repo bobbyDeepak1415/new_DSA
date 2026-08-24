@@ -1,11 +1,23 @@
-// const subjects = ["Maths", "English", "Telugu", "Geography", "Physics"];
+let arr=[11,29,32,4,9,2,1]
 
-// function display(subs, pageNo, pageSize) {
-//   let startIndex = (pageNo - 1) * pageSize;
 
-//   let lastIndex = startIndex + pageSize;
+function display(arr){
 
-//   return subs.slice(startIndex, lastIndex);
-// }
+    // let result=[]
 
-// console.log(display(subjects, 3, 2));
+
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<arr.lenth-i-1;j++){
+            let temp=arr[j]
+             arr[j]=arr[j+1]
+             arr[j+1]=temp
+        }
+
+    }
+
+return arr
+
+}
+
+
+console.log(display(arr))
