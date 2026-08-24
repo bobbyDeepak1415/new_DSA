@@ -1,5 +1,5 @@
 
-
+let str="AAABBCCABAA"
 
 function display(){
 
