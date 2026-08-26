@@ -1,7 +1,7 @@
 
 
-let str1="{[{[[]]}]}"
-let str2="[{()}]"
+let str1="[{((),[],[()])}]"
+let str2="[{()]"
 
 function display(arr){
 
@@ -21,4 +21,4 @@ return result.length===0
 
 }
 
-console.log(display(str1))
+console.log(display(str2))
