@@ -1,28 +1,8 @@
-let arr=[11,29,32,4,9,2,1]
 
 
+let arr=[34,8,9,12,3]
 
-function display(arr){
-
-    // let result=[]
-
-
-    for(let i=0;i<arr.length;i++){
-        for(let j=0;j<arr.length-i-1;j++){
-            if(arr[j]<arr[j+1]){
-
-                let temp=arr[j]
-                arr[j]=arr[j+1]
-                arr[j+1]=temp
-            }
-        }
-
-    }
-
-return arr
+function display(){
 
 }
 
-
-console.log(display(arr))
-// console.log("hello")
