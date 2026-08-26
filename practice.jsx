@@ -4,13 +4,7 @@ let str1="sucess"
 
 function display(str){
 
-
     let stack=[]
-
-    for(let i of str){
-        if(stack.includes(i)) return i
-        stack.push(i)
-    }
 
 
 }
