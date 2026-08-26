@@ -1,23 +1,24 @@
 
 
-let arr=[34,8,9,12,3]
+let str1="{[{[[]]}]}"
+let str2="[{()}]"
 
 function display(arr){
 
+let map={"]":"[","}":"{",")":"("}
 
-    for(let i=0;i<arr.length;i++){
-        for(let j=0;j<arr.length;j++){
-            if(arr[j]>arr[j+1]){
-                let temp=arr[j]
-                arr[j]=arr[j+1]
-                arr[j+1]=temp
-            }
-        }
+let result=[]
+
+for(let i of arr){
+    if(["}","]",")"].includes(i)){
+result.push(i)
+    }else if(["{","[","("].includes(i)){
+        if(result.pop()!==map[i]) return false
     }
-
-    return arr
-
+}
+    
+return result
 
 }
 
-// console.log(display(arr))
+// console.log(display(str1))
