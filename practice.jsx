@@ -1,18 +1,25 @@
 
 
-let str1="suceess"
 
-function display(str){
+let hayStack = "Bobby is a man and a Developer";
+let needle = "Developer";
 
-    let stack=[]
 
-    for(let i of str){
-        if(stack.includes(i)) return i
-        stack.push(i)
+function display(hayStack,needle){
+    
+    let arr1=hayStack.split("")
+    
+
+    
+for(let i=0;i<arr1.length;i++){
+    if(arr1[i]===needle){
+        return i
     }
+}
+
 
 
 
 }
 
-console.log(display(str1))
+console.log(display(hayStack,needle))
