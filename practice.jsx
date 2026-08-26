@@ -10,15 +10,15 @@ let map={"]":"[","}":"{",")":"("}
 let result=[]
 
 for(let i of arr){
-    if(["}","]",")"].includes(i)){
+    if(["{","[","("].includes(i)){
 result.push(i)
-    }else if(["{","[","("].includes(i)){
+    }else if(["}","]",")"].includes(i)){
         if(result.pop()!==map[i]) return false
     }
 }
     
-return result
+return result.length===0
 
 }
 
-// console.log(display(str1))
+console.log(display(str1))
