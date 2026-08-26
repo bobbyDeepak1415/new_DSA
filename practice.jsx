@@ -1,6 +1,6 @@
 
 
-let str1="success"
+let str1="sucess"
 
 function display(str){
 
