@@ -1,7 +1,9 @@
 
+let str="[[{{(({[]}))}}]]"
 
+let str2="[{(})}]"
 
-function display(){
+function display(str){
     
 
 
@@ -9,5 +11,4 @@ function display(){
 
 }
 
-console.log(display())
-console.log("hello")
+// console.log(display(str))
