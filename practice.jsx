@@ -3,6 +3,8 @@ let str="[[{{(({[]}))}}]]"
 
 let str2="[{(})}]"
 
+let str3="[{}]"
+
 function display(str){
     
 let map={"]":"[","}":"{",")":"("}
@@ -25,4 +27,4 @@ return stack.length===0
 
 }
 
-// console.log(display(str))
+// console.log(display(str2))
