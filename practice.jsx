@@ -1,10 +1,12 @@
 
 
 
-let arr=[31,2,23,9,4,12]
+let arr=[31,2,23,9,4,13]
 
 
-function display(){
+function display(arr){
+
+  return arr.reduce((a,b)=>a+b,0)
 
 }
 
