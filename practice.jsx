@@ -1,6 +1,6 @@
 
-let arr = [1,2,2,3,3,3,1,1,1,1]
 
+let arr=[5,8,9,3,4,4]
 
 
 function display(arr){
@@ -15,18 +15,14 @@ function display(arr){
 
         if(obj[i]>maxCount){
             maxCount=obj[i]
+            maxNum=i
         }
 
         
     }
 
 
-    for(let i of arr){
-        if(obj[i]===maxCount){
-            maxNum=i
-        }
-    }
-
+    
     return maxNum
 
 
