@@ -1,5 +1,5 @@
 
-let arr = [1,2,3,3,3,3,4,4]
+let arr = [1,2,2,3,3,3,1,1,1,1]
 
 
 
@@ -16,15 +16,23 @@ function display(arr){
         if(obj[i]>maxCount){
             maxCount=obj[i]
         }
+
+        
     }
 
 
-    
+    for(let i of arr){
+        if(obj[i]===maxCount){
+            maxNum=i
+        }
+    }
+
+    return maxNum
 
 
 }
 
-// console.log(display(arr))
+console.log(display(arr))
 
 
 
