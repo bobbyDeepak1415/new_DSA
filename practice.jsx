@@ -1,20 +1,17 @@
 function display(n) {
   let arr = [];
 
-//   for (let i = 1; i <= n; i++) {
-    if (n % 3 === 0 && n % 5 === 0) {
-      arr.push("FizzBuzz");
-    } else if (n % 3 === 0) {
-      arr.push("Fizz");
-    } else if (n % 5 === 0) {
-      arr.push("Buzz");
-    } else {
-      arr.push(n);
+  for(let i=0;i<=n;i++){
+    if(i%3===0&&i%5===0){
+        arr.push("FizzBuzz")
+    }else if(i%3===0){
+
     }
-//   }
+  }
+
 
   return arr;
 }
 
-console.log(display(13));
+// console.log(display(13));
 
