@@ -2,25 +2,26 @@
 let arr=[1, 3, 5, 2, 4, 3]
 function display(arr,k){
 
-   let result 
+    let result=""
 
-   for(let i=0;i<arr.length;i+=k){
-    let local=arr[i]
-    for(let j=i+1;j<arr.length && j<i+k;j++){
-        if(arr[j]<local){
-            localVal=arr[j]
+    for(let i=0;i<arr.length;i=i+k){
+        let local=arr[i]
+        for(let j=i+1;j<arr.length &&j<i+k;j++){
+            if(arr[j]<local){
+                local=arr[j]
+            }
+        }
+
+        if(i===0 || local>result){
+            result=local
         }
     }
-
-    if(local>result){
-        result=local
-    }
-   }
-
+ 
     return result
+
 }
 
-// console.log(display(arr,3))
+console.log(display(arr,2))
 
 // 1.break down into subsets of size k 
 // 2.find the smallest num in the subset
