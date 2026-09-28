@@ -14,16 +14,9 @@ let obj={}
 obj[i]=(obj[i] || 0)+1
     }
 
-    let result=0
-    for(let i of Object.values(obj)){
-        if(i>result){
-            result=i
-        }
-    }
-
+    return Object.values(obj)
     
-return result
 }
 
-console.log(display("sertaaaaaeeeee"))
+console.log(display("sertaeee"))
 
