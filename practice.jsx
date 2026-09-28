@@ -2,13 +2,13 @@
 let arr=[1, 3, 5, 2, 4, 3]
 function display(arr,k){
 
-    let result=""
+    let result
 
-    for(let i=0;i<arr.length;i=i+k){
+    for(let i=0;i<arr.length;i+=k){
         let local=arr[i]
-        for(let j=i+1;j<arr.length &&j<i+k;j++){
+        for(let j=i+1;j<i+k &&j<arr.length;j++){
             if(arr[j]<local){
-                local=arr[j]
+                local=arr[i]
             }
         }
 
@@ -16,12 +16,12 @@ function display(arr,k){
             result=local
         }
     }
- 
+    
     return result
 
 }
 
-console.log(display(arr,2))
+console.log(display(arr,3))
 
 // 1.break down into subsets of size k 
 // 2.find the smallest num in the subset
