@@ -9,19 +9,21 @@
 function display(str){
 
 let obj={}
-let result=""
+
     for(let i of str){
 obj[i]=(obj[i] || 0)+1
     }
 
-    for(let i=0;i<str.length;i++){
-        if(str[i]!=str[i-1]) {
-
-            result+=str[i]
+    let result=0
+    for(let i of Object.values(obj)){
+        if(i>result){
+            result=i
         }
-        
     }
+
+    
 return result
 }
 
-console.log(display(""))
+console.log(display("sertaaaaaeeeee"))
+
