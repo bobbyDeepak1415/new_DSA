@@ -6,8 +6,22 @@
 	// 		["a", "b", "d", "a", "a"] -- 4 elements
 
 
-function display(){
+function display(str){
 
+let obj={}
+let result=""
+    for(let i of str){
+obj[i]=(obj[i] || 0)+1
+    }
+
+    for(let i=1;i<str.length;i++){
+        if(i===i-1) return "repeat"
+        else{
+result+=i
+        }
+        
+    }
+return result
 }
 
-console.log(display())
+// console.log(display("abdaa"))
