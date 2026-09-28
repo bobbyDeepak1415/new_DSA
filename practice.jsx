@@ -14,9 +14,9 @@ let obj={}
 obj[i]=(obj[i] || 0)+1
     }
 
-    return Object.values(obj)
+    return Math.max(...Object.values(obj))
     
 }
 
-console.log(display("sertaeee"))
+console.log(display("abdaa"))
 
