@@ -5,11 +5,15 @@ function display(arr,k){
    let result 
 
    for(let i=0;i<arr.length;i+=k){
-    let localVal=arr[i]
+    let local=arr[i]
     for(let j=i+1;j<arr.length && j<i+k;j++){
-        if(arr[j]<localVal){
+        if(arr[j]<local){
             localVal=arr[j]
         }
+    }
+
+    if(local>result){
+        result=local
     }
    }
 
