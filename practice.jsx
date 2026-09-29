@@ -1,13 +1,9 @@
 
-let str="abdaa"
-function display(str){
+function display(){
 
-    
-
-    
-    
-
+ 
 }
 
 
-// console.log(display(str))
+
+console.log(display())
