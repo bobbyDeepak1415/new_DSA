@@ -2,27 +2,22 @@
 let arr=[1, 3, 5, 2, 4, 3]
 function display(arr,k){
 
-    let result
+    let result=0
 
-    for(let i=0;i<arr.length;i+=k){
+    for(let i=0;i<arr.length;i++){
         let local=arr[i]
-        for(let j=i+1;j<i+k &&j<arr.length;j++){
-            if(arr[j]<local){
-                local=arr[i]
-            }
-        }
+        for(let j=i+1;j<arr.length;j++){
 
-        if(i===0 || local>result){
-            result=local
+            if(arr[j]<local){
+                local=arr[j]
+            }
+
         }
     }
-    
-    return result
+
+    return local
 
 }
 
-console.log(display(arr,3))
 
-// 1.break down into subsets of size k 
-// 2.find the smallest num in the subset
-// 3.Among these smallest,find the largest 
+console.log(display(arr,k))
