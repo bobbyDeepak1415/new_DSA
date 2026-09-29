@@ -1,6 +1,5 @@
 
-// let arr=[1, 3, 5, 2, 4, 3]
-let arr=[2,3,4,1,3,5]
+let str="abdaa"
 function display(arr,k){
 
     let result=0
