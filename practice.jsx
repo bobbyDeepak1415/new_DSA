@@ -4,6 +4,13 @@ function display(arr){
 
     let result=[]
 
+    for(let i of arr){
+        if(!Array.isArray(i)){
+            result.push(i)
+        }else{
+            result.push(...display(i))
+        }
+    }
 
    return result
  
