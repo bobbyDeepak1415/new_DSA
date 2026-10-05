@@ -1,25 +1,32 @@
 
-let str="[[[{{()}}]]]"
-// let str1="[[{}]]()]"
+let str="AABBCAAB"
+
+
 function display(str){
 
-let map={"}":"{","]":"[",")":"("}
+let result=""
 
-let stack=[]
+let obj={}
 
-for(let i of str)
-    if(["[","(","{"].includes(i)){
-        stack.push(i)
-    }else if(["]",")","}"].includes(i)){
-        if(stack.pop()!==map(i)){
-            return false
-        }
+for(let i of arr){
+    obj[i]=(obj[i] ||0)+1
+
+}
+
+let seen=new Set()
+
+for(let i of str){
+    if(!seen.has(i)){
+        seen.add(i)
+        result+=i+obj[i]
     }
-
-    return stack.length===0
- 
 }
 
 
+return result
 
-// console.log(display(str))
+
+
+}
+
+console.log(display(arr))
