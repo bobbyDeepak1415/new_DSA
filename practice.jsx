@@ -1,30 +1,22 @@
 
-let str="AAABABBCCDDDAB"
+let arr=[1,2,[3,4,[5,6]]]
 
-function display(str){
+function display(arr){
 
-    let result=""
+    let result=[]
 
-    let obj={}
-
-for(let i of arr){
-    obj[i]=(obj[i] || 0) +1
-}
-
-
-let seen=new Set()
-
-for(let i of arr){
-    if(!seen.has(i)){
-        seen.add(i)
-        result+=i+obj[i]
+    for(let i of arr){
+        if(Array.isArray(i)){
+            result.push(...display(i))
+        }else{
+            result.push(i)
+        }
     }
-}
 
 return result
     
 }
 
-// console.log(display(str))
+console.log(display(arr))
 
 
