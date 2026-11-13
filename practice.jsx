@@ -20,4 +20,4 @@ function display(arr){
 }
 
 
-// console.log(display(arr1))
+console.log(display(arr1))
