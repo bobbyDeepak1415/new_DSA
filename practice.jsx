@@ -1,23 +1,26 @@
 
+// k=
 
-
-let arr1=[1,2,[3,4,[5,6],[7,8],9],10]
+let arr1=[12,7,4,1.4,2,5,6,9]
 
 
 function display(arr){
 
-    let result=[]
+    // let result=[]
 
-    for(let i of arr){
-    if(!Array.isArray(i)){
-        result.push(i)
-    }else {
-        result.push(...display(i))
-    }
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<arr.length;j++){
+            if(arr[j]>arr[j+1]){
+                let k=arr[j]
+                arr[j]=arr[j+1]
+                arr[j+1]=k
+            }
+        }
     }
 
-    return result
+    return arr
+   
 }
 
 
-console.log(display(arr1))
+// console.log(display(arr1))
